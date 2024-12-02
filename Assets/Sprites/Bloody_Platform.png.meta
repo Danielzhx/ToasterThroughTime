@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bloody_Platform_0: 7766667915000026326
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
