@@ -34,7 +34,6 @@ namespace TarodevController
         {
             _rb = GetComponent<Rigidbody2D>();
             _col = GetComponent<CapsuleCollider2D>();
-
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         }
 
@@ -162,6 +161,19 @@ namespace TarodevController
             else
             {
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
+
+                // Flip character direction
+                FlipCharacter(_frameInput.Move.x);
+            }
+        }
+
+        private void FlipCharacter(float direction)
+        {
+            Vector3 scale = transform.localScale;
+            if (direction > 0 && scale.x < 0 || direction < 0 && scale.x > 0)
+            {
+                scale.x *= -1; // Flip the x-scale
+                transform.localScale = scale;
             }
         }
 
