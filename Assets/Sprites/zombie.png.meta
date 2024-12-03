@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4c0ae3eaf36855249afb04900375cb4f
+guid: a59c26332caece94780a86fceb33204e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 893013417206959396
-    second: MossCoveredLog_0
+      213: -5782521184205631276
+    second: zombie_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MossCoveredLog_0
+      name: zombie_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 16
+        x: 9
+        y: 5
+        width: 152
+        height: 206
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 42d4748b8fe946c00800000000000000
-      internalID: 893013417206959396
+      spriteID: 4d0904dbe9b50cfa0800000000000000
+      internalID: -5782521184205631276
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MossCoveredLog_0: 893013417206959396
+      zombie_0: -5782521184205631276
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
