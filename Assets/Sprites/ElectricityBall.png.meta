@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 496709d28ae2f274eb0c7bdfea00c8ac
+guid: ac1235e1281ef924286dc133be044407
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3928384742337090168
-    second: Hurt_Anim_0
-  - first:
-      213: -6872928908738256574
-    second: Hurt_Anim_1
-  - first:
-      213: 9020183340736209604
-    second: Hurt_Anim_2
+      213: 6394470485776547383
+    second: ElectricityBall_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hurt_Anim_0
+      name: ElectricityBall_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 44
-        width: 36
-        height: 22
+        x: 0
+        y: 1
+        width: 31
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,52 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87211141c1d648630800000000000000
-      internalID: 3928384742337090168
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hurt_Anim_1
-      rect:
-        serializedVersion: 2
-        x: 53
-        y: 44
-        width: 35
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 241a42462937e90a0800000000000000
-      internalID: -6872928908738256574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Hurt_Anim_2
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 0
-        width: 36
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c26a7915f02e2d70800000000000000
-      internalID: 9020183340736209604
+      spriteID: 73e3e670709bdb850800000000000000
+      internalID: 6394470485776547383
       vertices: []
       indices: 
       edges: []
@@ -197,10 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Hurt_Anim_0: 3928384742337090168
-      Hurt_Anim_1: -6872928908738256574
-      Hurt_Anim_2: 9020183340736209604
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

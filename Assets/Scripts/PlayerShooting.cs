@@ -1,3 +1,4 @@
+using TarodevController;
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
@@ -14,7 +15,12 @@ public class PlayerShooting : MonoBehaviour
     public GameObject[] Projectiles;
 
     private int currentProjIndex = 0;
+
+    private PlayerController playerController; 
+
+
     
+
 
     void Update()
     {
@@ -31,12 +37,21 @@ public class PlayerShooting : MonoBehaviour
             currentProjIndex = 0;
         }
 
+
         GameObject currentProjectile = Projectiles[currentProjIndex];
+        Rigidbody2D rb = currentProjectile.GetComponent<Rigidbody2D>();
 
         if (!currentProjectile.gameObject.activeSelf) {
+        
+            if (rb != null){
+        
             currentProjectile.SetActive(true);
+        
             currentProjIndex++;
             currentProjectile.transform.position += firePoint.position - currentProjectile.transform.position;
+            }
+
+                     
         }
 
         // If no firePoint is specified, use the player position as the spawn point

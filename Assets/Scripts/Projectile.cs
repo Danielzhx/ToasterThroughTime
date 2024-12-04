@@ -1,4 +1,6 @@
+using TarodevController;
 using UnityEditor.Callbacks;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
@@ -6,11 +8,15 @@ public class Projectile : MonoBehaviour
     public float lifespan = 2f;
     private float starttime;
     public float ProjectileSpeed = 5;
+
+    public Vector2 projectileDirection;
     
     private Rigidbody2D ProjectileBody;
+    public PlayerController playerController;
+ 
 
 
-    void Awake()    
+    void Start()    
     {ProjectileBody = GetComponent<Rigidbody2D>();}
   
        void Update() {
@@ -19,22 +25,21 @@ public class Projectile : MonoBehaviour
             this.gameObject.SetActive(false);     
         }
 
-        shoot();
+        Shoot();
        
        }
-    void OnEnable(){
+        void OnEnable(){
         starttime =  Time.time;
+        Vector2 direction = playerController.isFacingRight ? transform.right : -transform.right;
+        projectileDirection = direction;    
     }
 
-       void shoot(){
+       void Shoot(){
 
-        Rigidbody2D rb = ProjectileBody;
-        
-        // Get the Rigidbody2D component from the projectile
-        if (rb != null)
-        {
-            // Set the velocity of the projectile to move in the direction the player is facing
-            rb.linearVelocity = transform.right * ProjectileSpeed;
-        }
+
+         if (ProjectileBody != null){
+        ProjectileBody.linearVelocity = projectileDirection * ProjectileSpeed;
+
+         }
        }
 }

@@ -1572,7 +1572,65 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Recharge_Anim_0: -2633892630364547239
+      Recharge_Anim_1: -8321721139514593285
+      Recharge_Anim_10: -913047662570241265
+      Recharge_Anim_11: -8244559055245214841
+      Recharge_Anim_12: -6963554890419357424
+      Recharge_Anim_13: -8084240642740395495
+      Recharge_Anim_14: -689191361890490709
+      Recharge_Anim_15: 4815234293962533398
+      Recharge_Anim_16: -7461324402860222850
+      Recharge_Anim_17: -7556937841261469891
+      Recharge_Anim_18: -2816922603647532179
+      Recharge_Anim_19: 4699925179703728906
+      Recharge_Anim_2: -1850402101558973577
+      Recharge_Anim_20: 5048701468035823619
+      Recharge_Anim_21: -2312511068217781985
+      Recharge_Anim_22: 9189082767078970523
+      Recharge_Anim_23: 5158441494353304570
+      Recharge_Anim_24: 6608881485680076560
+      Recharge_Anim_25: -9082928685602810528
+      Recharge_Anim_26: -5075706897964961738
+      Recharge_Anim_27: -3995154334533789341
+      Recharge_Anim_28: -6366422869828685440
+      Recharge_Anim_29: 1103073899805218690
+      Recharge_Anim_3: 9176790818443822279
+      Recharge_Anim_30: 7876896360332468826
+      Recharge_Anim_31: 3274275366360312778
+      Recharge_Anim_32: 4657026124390020021
+      Recharge_Anim_33: 2781423498114206925
+      Recharge_Anim_34: -4163013460429438727
+      Recharge_Anim_35: -8602923908824300632
+      Recharge_Anim_36: 430860496509557487
+      Recharge_Anim_37: 681951185051171692
+      Recharge_Anim_38: -126833005717993402
+      Recharge_Anim_39: -2026279655748756580
+      Recharge_Anim_4: 558937467450663936
+      Recharge_Anim_40: -3159346489773226498
+      Recharge_Anim_41: -4683463811450451251
+      Recharge_Anim_42: -7125310053420722167
+      Recharge_Anim_43: -1966916487579595733
+      Recharge_Anim_44: 4830369403560985539
+      Recharge_Anim_45: -5693679541513311906
+      Recharge_Anim_46: 1108303782948593445
+      Recharge_Anim_47: 1314461812938494645
+      Recharge_Anim_48: -879075758572063957
+      Recharge_Anim_49: 7015610163090467575
+      Recharge_Anim_5: -6674686787265183260
+      Recharge_Anim_50: 6562730922059248536
+      Recharge_Anim_51: -1168231934381805468
+      Recharge_Anim_52: 160408938706697188
+      Recharge_Anim_53: -645556225300302802
+      Recharge_Anim_54: -5246835348985247680
+      Recharge_Anim_55: 9101376942348987612
+      Recharge_Anim_56: -3196943193463635835
+      Recharge_Anim_57: -5244178308220692183
+      Recharge_Anim_6: -1147329569416080478
+      Recharge_Anim_7: -6737600949854108940
+      Recharge_Anim_8: 5346930989175118561
+      Recharge_Anim_9: -5035584826938347229
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

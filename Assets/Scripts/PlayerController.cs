@@ -21,6 +21,8 @@ namespace TarodevController
         private bool _cachedQueryStartInColliders;
         private Animator Walking_Animator;
 
+        public bool isFacingRight = true;
+
         #region Interface
 
         public Vector2 FrameInput => _frameInput.Move;
@@ -164,14 +166,17 @@ namespace TarodevController
             {
                 var deceleration = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, deceleration * Time.fixedDeltaTime);
+
             }
             else
             {
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
 
+                
                 // Flip character direction
                 FlipCharacter(_frameInput.Move.x);
-            }
+
+            }   
         }
 
         private void FlipCharacter(float direction)
@@ -181,6 +186,10 @@ namespace TarodevController
             {
                 scale.x *= -1; // Flip the x-scale
                 transform.localScale = scale;
+                // if flipped while facing right, face left and vice versa.
+                if (isFacingRight){isFacingRight = false;}
+                else {isFacingRight = true;}
+
             }
         }
 
