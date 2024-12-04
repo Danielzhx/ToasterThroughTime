@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Bread_Shot_Anim_0: -1033182104966236344
+      Bread_Shot_Anim_1: -7350798200947061427
+      Bread_Shot_Anim_2: 7735704149829181473
+      Bread_Shot_Anim_3: 9103135634435545070
+      Bread_Shot_Anim_4: -2683559945150668321
+      Bread_Shot_Anim_5: -3971517417944606524
+      Bread_Shot_Anim_6: -668886504413757473
+      Bread_Shot_Anim_7: 2127838390150630844
+      Bread_Shot_Anim_8: -4536638310766669300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
