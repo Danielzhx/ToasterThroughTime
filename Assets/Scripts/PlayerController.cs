@@ -19,6 +19,7 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
+        private Animator Walking_Animator;
 
         #region Interface
 
@@ -34,6 +35,7 @@ namespace TarodevController
         {
             _rb = GetComponent<Rigidbody2D>();
             _col = GetComponent<CapsuleCollider2D>();
+            Walking_Animator = GetComponent<Animator>();
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
         }
 
@@ -62,6 +64,11 @@ namespace TarodevController
             {
                 _jumpToConsume = true;
                 _timeJumpWasPressed = _time;
+            }
+
+            if (_frameInput.Move.x == 1 || _frameInput.Move.x == -1)
+            {
+                Walking_Animator.SetTrigger("InitiateWalk");
             }
         }
 
@@ -197,7 +204,12 @@ namespace TarodevController
 
         #endregion
 
-        private void ApplyMovement() => _rb.linearVelocity = _frameVelocity;
+        private void ApplyMovement()
+        {
+            _rb.linearVelocity = _frameVelocity;
+            Walking_Animator.SetInteger("YVelocity", (int)_frameVelocity.y);
+            Walking_Animator.SetFloat("MovementVelocity", Mathf.Abs(_frameVelocity.x));
+        }
 
 #if UNITY_EDITOR
         private void OnValidate()
