@@ -1,0 +1,1580 @@
+fileFormatVersion: 2
+guid: 76186411a2dabd645b0661377666711c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2633892630364547239
+    second: Recharge_Anim_0
+  - first:
+      213: -8321721139514593285
+    second: Recharge_Anim_1
+  - first:
+      213: -1850402101558973577
+    second: Recharge_Anim_2
+  - first:
+      213: 9176790818443822279
+    second: Recharge_Anim_3
+  - first:
+      213: 558937467450663936
+    second: Recharge_Anim_4
+  - first:
+      213: -6674686787265183260
+    second: Recharge_Anim_5
+  - first:
+      213: -1147329569416080478
+    second: Recharge_Anim_6
+  - first:
+      213: -6737600949854108940
+    second: Recharge_Anim_7
+  - first:
+      213: 5346930989175118561
+    second: Recharge_Anim_8
+  - first:
+      213: -5035584826938347229
+    second: Recharge_Anim_9
+  - first:
+      213: -913047662570241265
+    second: Recharge_Anim_10
+  - first:
+      213: -8244559055245214841
+    second: Recharge_Anim_11
+  - first:
+      213: -6963554890419357424
+    second: Recharge_Anim_12
+  - first:
+      213: -8084240642740395495
+    second: Recharge_Anim_13
+  - first:
+      213: -689191361890490709
+    second: Recharge_Anim_14
+  - first:
+      213: 4815234293962533398
+    second: Recharge_Anim_15
+  - first:
+      213: -7461324402860222850
+    second: Recharge_Anim_16
+  - first:
+      213: -7556937841261469891
+    second: Recharge_Anim_17
+  - first:
+      213: -2816922603647532179
+    second: Recharge_Anim_18
+  - first:
+      213: 4699925179703728906
+    second: Recharge_Anim_19
+  - first:
+      213: 5048701468035823619
+    second: Recharge_Anim_20
+  - first:
+      213: -2312511068217781985
+    second: Recharge_Anim_21
+  - first:
+      213: 9189082767078970523
+    second: Recharge_Anim_22
+  - first:
+      213: 5158441494353304570
+    second: Recharge_Anim_23
+  - first:
+      213: 6608881485680076560
+    second: Recharge_Anim_24
+  - first:
+      213: -9082928685602810528
+    second: Recharge_Anim_25
+  - first:
+      213: -5075706897964961738
+    second: Recharge_Anim_26
+  - first:
+      213: -3995154334533789341
+    second: Recharge_Anim_27
+  - first:
+      213: -6366422869828685440
+    second: Recharge_Anim_28
+  - first:
+      213: 1103073899805218690
+    second: Recharge_Anim_29
+  - first:
+      213: 7876896360332468826
+    second: Recharge_Anim_30
+  - first:
+      213: 3274275366360312778
+    second: Recharge_Anim_31
+  - first:
+      213: 4657026124390020021
+    second: Recharge_Anim_32
+  - first:
+      213: 2781423498114206925
+    second: Recharge_Anim_33
+  - first:
+      213: -4163013460429438727
+    second: Recharge_Anim_34
+  - first:
+      213: -8602923908824300632
+    second: Recharge_Anim_35
+  - first:
+      213: 430860496509557487
+    second: Recharge_Anim_36
+  - first:
+      213: 681951185051171692
+    second: Recharge_Anim_37
+  - first:
+      213: -126833005717993402
+    second: Recharge_Anim_38
+  - first:
+      213: -2026279655748756580
+    second: Recharge_Anim_39
+  - first:
+      213: -3159346489773226498
+    second: Recharge_Anim_40
+  - first:
+      213: -4683463811450451251
+    second: Recharge_Anim_41
+  - first:
+      213: -7125310053420722167
+    second: Recharge_Anim_42
+  - first:
+      213: -1966916487579595733
+    second: Recharge_Anim_43
+  - first:
+      213: 4830369403560985539
+    second: Recharge_Anim_44
+  - first:
+      213: -5693679541513311906
+    second: Recharge_Anim_45
+  - first:
+      213: 1108303782948593445
+    second: Recharge_Anim_46
+  - first:
+      213: 1314461812938494645
+    second: Recharge_Anim_47
+  - first:
+      213: -879075758572063957
+    second: Recharge_Anim_48
+  - first:
+      213: 7015610163090467575
+    second: Recharge_Anim_49
+  - first:
+      213: 6562730922059248536
+    second: Recharge_Anim_50
+  - first:
+      213: -1168231934381805468
+    second: Recharge_Anim_51
+  - first:
+      213: 160408938706697188
+    second: Recharge_Anim_52
+  - first:
+      213: -645556225300302802
+    second: Recharge_Anim_53
+  - first:
+      213: -5246835348985247680
+    second: Recharge_Anim_54
+  - first:
+      213: 9101376942348987612
+    second: Recharge_Anim_55
+  - first:
+      213: -3196943193463635835
+    second: Recharge_Anim_56
+  - first:
+      213: -5244178308220692183
+    second: Recharge_Anim_57
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Recharge_Anim_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 383
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9571a9e8b98827bd0800000000000000
+      internalID: -2633892630364547239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 383
+        width: 48
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bffaf57c6be438c80800000000000000
+      internalID: -8321721139514593285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_2
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 383
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77be0fca71d0256e0800000000000000
+      internalID: -1850402101558973577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 407
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4096fe0a28a5f70800000000000000
+      internalID: 9176790818443822279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 406
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004ad0f4aaeb1c700800000000000000
+      internalID: 558937467450663936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_5
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 407
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1c0122bbfbe53a0800000000000000
+      internalID: -6674686787265183260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 383
+        width: 48
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a317aed5ddd310f0800000000000000
+      internalID: -1147329569416080478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_7
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 383
+        width: 41
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f28c9922ab3f72a0800000000000000
+      internalID: -6737600949854108940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 396
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ea9f48c76d143a40800000000000000
+      internalID: 5346930989175118561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_9
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 391
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3213ef197420e1ab0800000000000000
+      internalID: -5035584826938347229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_10
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 396
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0300890df33453f0800000000000000
+      internalID: -913047662570241265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_11
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 383
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78bf0668831759d80800000000000000
+      internalID: -8244559055245214841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_12
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 383
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 019be9eb8bb7c5f90800000000000000
+      internalID: -6963554890419357424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_13
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 319
+        width: 43
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 912eea2b7f10fcf80800000000000000
+      internalID: -8084240642740395495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_14
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 353
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6ef3c9b108f66f0800000000000000
+      internalID: -689191361890490709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_15
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 344
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61a6ae1041623d240800000000000000
+      internalID: 4815234293962533398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_16
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 319
+        width: 35
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e761095ccfc047890800000000000000
+      internalID: -7461324402860222850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_17
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 319
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f17ed521d502790800000000000000
+      internalID: -7556937841261469891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_18
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 319
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6302d111d748e8d0800000000000000
+      internalID: -2816922603647532179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_19
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 319
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b9727bc0d793140800000000000000
+      internalID: 4699925179703728906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_20
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 319
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308b44b6c37901640800000000000000
+      internalID: 5048701468035823619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_21
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 319
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1158b78f6f48efd0800000000000000
+      internalID: -2312511068217781985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_22
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 255
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94d76f371e268f70800000000000000
+      internalID: 9189082767078970523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_23
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 255
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb50916537769740800000000000000
+      internalID: 5158441494353304570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_24
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 255
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017ed9422b677bb50800000000000000
+      internalID: 6608881485680076560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_25
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 255
+        width: 36
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065507edb74f2f180800000000000000
+      internalID: -9082928685602810528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_26
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 255
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6307cc2f7777f89b0800000000000000
+      internalID: -5075706897964961738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_27
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 255
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 369504bcc4c5e88c0800000000000000
+      internalID: -3995154334533789341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_28
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 255
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08130f1712ce5a7a0800000000000000
+      internalID: -6366422869828685440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 191
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28715e61ed7ee4f00800000000000000
+      internalID: 1103073899805218690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_30
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 191
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a522f22918b505d60800000000000000
+      internalID: 7876896360332468826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 191
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acbe7bc0910907d20800000000000000
+      internalID: 3274275366360312778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_32
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 191
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b33bfd069411a040800000000000000
+      internalID: 4657026124390020021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_33
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 191
+        width: 38
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc85075fe9999620800000000000000
+      internalID: 2781423498114206925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_34
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 191
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f00fe770510a36c0800000000000000
+      internalID: -4163013460429438727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_35
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 191
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a300d009464c9880800000000000000
+      internalID: -8602923908824300632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_36
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 127
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea533ab659baf500800000000000000
+      internalID: 430860496509557487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_37
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 127
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bb12b5df6c67900800000000000000
+      internalID: 681951185051171692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_38
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 127
+        width: 38
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6484264ad066d3ef0800000000000000
+      internalID: -126833005717993402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_39
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 127
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b9e77836531e3e0800000000000000
+      internalID: -2026279655748756580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_40
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 127
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef580b24b1fb724d0800000000000000
+      internalID: -3159346489773226498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_41
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 127
+        width: 34
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dca49104a7ef00fb0800000000000000
+      internalID: -4683463811450451251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_42
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 127
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90896570240dd1d90800000000000000
+      internalID: -7125310053420722167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_43
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 63
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c85fe20eb14b4e0800000000000000
+      internalID: -1966916487579595733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_44
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 63
+        width: 34
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c30b21516be80340800000000000000
+      internalID: 4830369403560985539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_45
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 63
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e59a0379f9cfbf0b0800000000000000
+      internalID: -5693679541513311906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_46
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 63
+        width: 39
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52f5fd52b6c716f00800000000000000
+      internalID: 1108303782948593445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_47
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 63
+        width: 37
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2d307fd08ed3210800000000000000
+      internalID: 1314461812938494645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_48
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 63
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23b7af4145ecc3f0800000000000000
+      internalID: -879075758572063957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_49
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 63
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7faa0a5e5447c5160800000000000000
+      internalID: 7015610163090467575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_50
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89330d5b001831b50800000000000000
+      internalID: 6562730922059248536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_51
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 0
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460b7e7ce3b99cfe0800000000000000
+      internalID: -1168231934381805468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_52
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 34
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ebf8627413e93200800000000000000
+      internalID: 160408938706697188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_53
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24fe6c88068a07f0800000000000000
+      internalID: -645556225300302802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_54
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 12
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04885cc8c0f7f27b0800000000000000
+      internalID: -5246835348985247680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_55
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 0
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdc64af9b169e4e70800000000000000
+      internalID: 9101376942348987612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_56
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5804f7a8a1d22a3d0800000000000000
+      internalID: -3196943193463635835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Recharge_Anim_57
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 0
+        width: 51
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92952bf0d9fe837b0800000000000000
+      internalID: -5244178308220692183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

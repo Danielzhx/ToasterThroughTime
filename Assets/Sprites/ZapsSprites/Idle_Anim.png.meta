@@ -1,34 +1,37 @@
 fileFormatVersion: 2
-guid: 2188fbf631a25e54398dfe0bb49f5522
+guid: 4f80aa128172fa245848d95f3033a3d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3839626377653014811
-    second: Walk_Cycle_0
+      213: 6571332387419481170
+    second: Idle_Anim_0
   - first:
-      213: -3627517112963149140
-    second: Walk_Cycle_1
+      213: -8766344689212501232
+    second: Idle_Anim_1
   - first:
-      213: -5135378304187635844
-    second: Walk_Cycle_2
+      213: 6362264812496491310
+    second: Idle_Anim_2
   - first:
-      213: -4029086596313405342
-    second: Walk_Cycle_3
+      213: -6716953394029973081
+    second: Idle_Anim_3
   - first:
-      213: 6613034102838058775
-    second: Walk_Cycle_4
+      213: -7911476377334691708
+    second: Idle_Anim_4
   - first:
-      213: -1090679472367471992
-    second: Walk_Cycle_5
+      213: -4244602495799865793
+    second: Idle_Anim_5
   - first:
-      213: 6297048130524530617
-    second: Walk_Cycle_6
+      213: -3492416888010505791
+    second: Idle_Anim_6
   - first:
-      213: 821939016674082136
-    second: Walk_Cycle_7
+      213: 2247063962276649347
+    second: Idle_Anim_7
   - first:
-      213: 4152839273600523172
-    second: Walk_Cycle_8
+      213: -7444165984109151926
+    second: Idle_Anim_8
+  - first:
+      213: -4789714682849123482
+    second: Idle_Anim_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -61,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -99,7 +102,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -137,199 +140,221 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_Cycle_0
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 90
-        width: 35
-        height: 21
-      alignment: 9
-      pivot: {x: 0.47142857, y: 0.47619048}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5eea5c91728e6bac0800000000000000
-      internalID: -3839626377653014811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Cycle_1
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 90
-        width: 33
-        height: 21
-      alignment: 9
-      pivot: {x: 0.5, y: 0.47619048}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca25e29b76878adc0800000000000000
-      internalID: -3627517112963149140
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Cycle_2
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 90
-        width: 34
-        height: 21
-      alignment: 9
-      pivot: {x: 0.4852941, y: 0.47619048}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c77e5a704a87bb8b0800000000000000
-      internalID: -5135378304187635844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Cycle_3
+      name: Idle_Anim_0
       rect:
         serializedVersion: 2
         x: 10
-        y: 45
+        y: 89
         width: 35
-        height: 21
-      alignment: 9
-      pivot: {x: 0.47142857, y: 0.47619048}
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 268a371761fc518c0800000000000000
-      internalID: -4029086596313405342
+      spriteID: 254682d6dff023b50800000000000000
+      internalID: 6571332387419481170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Cycle_4
+      name: Idle_Anim_1
       rect:
         serializedVersion: 2
         x: 55
-        y: 45
-        width: 36
-        height: 21
-      alignment: 9
-      pivot: {x: 0.45833334, y: 0.47619048}
+        y: 89
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 71fd43baa7736cb50800000000000000
-      internalID: 6613034102838058775
+      spriteID: 0135bd483ffa75680800000000000000
+      internalID: -8766344689212501232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Cycle_5
+      name: Idle_Anim_2
       rect:
         serializedVersion: 2
         x: 100
-        y: 45
-        width: 34
-        height: 21
-      alignment: 9
-      pivot: {x: 0.4852941, y: 0.47619048}
+        y: 89
+        width: 35
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 882f9bd6cc02dd0f0800000000000000
-      internalID: -1090679472367471992
+      spriteID: e2312d3632e4b4850800000000000000
+      internalID: 6362264812496491310
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Cycle_6
+      name: Idle_Anim_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 89
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a13dffd97698c2a0800000000000000
+      internalID: -6716953394029973081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Anim_4
       rect:
         serializedVersion: 2
         x: 10
-        y: 0
-        width: 33
-        height: 20
+        y: 44
+        width: 35
+        height: 22
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9b7c37959eb936750800000000000000
-      internalID: 6297048130524530617
+      spriteID: 4884210d62ac43290800000000000000
+      internalID: -7911476377334691708
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_Cycle_7
+      name: Idle_Anim_5
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 44
+        width: 35
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ecc19d4842815c0800000000000000
+      internalID: -4244602495799865793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Anim_6
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 44
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c10f8e0851788fc0800000000000000
+      internalID: -3492416888010505791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Anim_7
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 44
+        width: 38
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389d41ba4cc2f2f10800000000000000
+      internalID: 2247063962276649347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Anim_8
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 37
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a49b0247a7201b890800000000000000
+      internalID: -7444165984109151926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Idle_Anim_9
       rect:
         serializedVersion: 2
         x: 55
         y: 0
-        width: 31
-        height: 20
-      alignment: 9
-      pivot: {x: 0.5322581, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85d74eb4e2d186b00800000000000000
-      internalID: 821939016674082136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_Cycle_8
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 0
-        width: 33
-        height: 20
+        width: 35
+        height: 21
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ab10401159d1a930800000000000000
-      internalID: 4152839273600523172
+      spriteID: 6632e497fd3878db0800000000000000
+      internalID: -4789714682849123482
       vertices: []
       indices: 
       edges: []
@@ -338,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 3fbd64753b493c949aaa197178c32aeb
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -347,17 +372,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Walk_Cycle_0: -3839626377653014811
-      Walk_Cycle_1: -3627517112963149140
-      Walk_Cycle_2: -5135378304187635844
-      Walk_Cycle_3: -4029086596313405342
-      Walk_Cycle_4: 6613034102838058775
-      Walk_Cycle_5: -1090679472367471992
-      Walk_Cycle_6: 6297048130524530617
-      Walk_Cycle_7: 821939016674082136
-      Walk_Cycle_8: 4152839273600523172
-      Walk_Cycle_9: 792929846
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
