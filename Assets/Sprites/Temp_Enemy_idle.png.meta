@@ -109,7 +109,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -117,10 +116,10 @@ TextureImporter:
       name: Temp_Enemy_idle_0
       rect:
         serializedVersion: 2
-        x: 13
+        x: 15
         y: 0
-        width: 21
-        height: 26
+        width: 16
+        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -129,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed081dfcc0fc8b7408eada8f63a7d86f
-      internalID: 912492396
+      spriteID: d26c40d2d25eecad8a4e4ad23db013e9
+      internalID: -1536026657
       vertices: []
       indices: 
       edges: []
@@ -139,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1968d03ac940df44d83c78c52e219238
+    spriteID: 93e56ac3296165cb99513f48bc76793f
     internalID: 0
     vertices: []
     indices: 
@@ -149,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Temp_Enemy_idle_0: 912492396
+      Temp_Enemy_idle_0: -1536026657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
