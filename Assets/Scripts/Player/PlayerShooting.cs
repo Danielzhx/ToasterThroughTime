@@ -21,7 +21,6 @@ public class PlayerShooting : MonoBehaviour
 
     
 
-
     void Update()
     {
         // Check if the player presses the fire button (e.g., left mouse button or space)
