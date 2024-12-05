@@ -56,6 +56,8 @@ namespace TarodevController
         }
 
 
+        #region Health
+
         private void OnTriggerEnter2D(Collider2D collision)
         {
             // Check if the player collides with an enemy
