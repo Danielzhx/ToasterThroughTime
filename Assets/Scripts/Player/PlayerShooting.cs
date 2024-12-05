@@ -11,6 +11,7 @@ public class PlayerShooting : MonoBehaviour
 
     // Offset for where to instantiate the projectile
     public Transform firePoint;
+    public Charges charges;
 
     public GameObject[] Projectiles;
 
@@ -41,16 +42,12 @@ public class PlayerShooting : MonoBehaviour
         Rigidbody2D rb = currentProjectile.GetComponent<Rigidbody2D>();
 
         if (!currentProjectile.gameObject.activeSelf) {
-        
-            if (rb != null){
-        
-            currentProjectile.SetActive(true);
-        
-            currentProjIndex++;
-            currentProjectile.transform.position += firePoint.position - currentProjectile.transform.position;
+            if (rb != null && charges.currentCharges > 0){
+                currentProjectile.SetActive(true);
+                currentProjIndex++;
+                currentProjectile.transform.position += firePoint.position - currentProjectile.transform.position;
+                charges.currentCharges--;
             }
-
-                     
         }
 
         // If no firePoint is specified, use the player position as the spawn point
