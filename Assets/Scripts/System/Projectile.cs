@@ -1,6 +1,4 @@
 using TarodevController;
-using UnityEditor.Callbacks;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
