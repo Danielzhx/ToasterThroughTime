@@ -1934,6 +1934,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7759992831773646631, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6394470485776547383, guid: ac1235e1281ef924286dc133be044407, type: 3}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: lifespan
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 789768075}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4496,6 +4512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 0b1d3b9fd178f5f43b4a224a20819382, type: 2}
+  isFacingRight: 1
 --- !u!50 &789768076
 Rigidbody2D:
   serializedVersion: 5
@@ -6676,6 +6693,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7759992831773646631, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6394470485776547383, guid: ac1235e1281ef924286dc133be044407, type: 3}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: lifespan
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 789768075}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7888,6 +7921,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7759992831773646631, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6394470485776547383, guid: ac1235e1281ef924286dc133be044407, type: 3}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: lifespan
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 789768075}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8422,6 +8471,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile
       objectReference: {fileID: 0}
+    - target: {fileID: 7759992831773646631, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6394470485776547383, guid: ac1235e1281ef924286dc133be044407, type: 3}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: lifespan
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: ProjectileSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 789768075}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
