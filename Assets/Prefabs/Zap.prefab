@@ -15,10 +15,9 @@ GameObject:
   - component: {fileID: 7686921491613073625}
   - component: {fileID: 498741902525276008}
   - component: {fileID: 3441132176190187858}
-  - component: {fileID: 2580921029243398477}
   m_Layer: 0
   m_Name: Zap
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -170,6 +169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 0b1d3b9fd178f5f43b4a224a20819382, type: 2}
+  maxHealth: 4
+  currentHealth: 0
+  invincibilityDuration: 1
   isFacingRight: 1
 --- !u!114 &498741902525276008
 MonoBehaviour:
@@ -213,19 +215,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2580921029243398477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2127351605655488202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bebdbe1021cb21901af6a7e31429fef6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthArrow: {fileID: 0}
-  maxHealth: 0
-  currentHealth: 0
-  hitCoolDown: 0
