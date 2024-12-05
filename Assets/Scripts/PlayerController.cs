@@ -1,5 +1,7 @@
 using System;
 using UnityEngine;
+using System.Collections;
+
 
 namespace TarodevController
 {
@@ -21,6 +23,14 @@ namespace TarodevController
         private bool _cachedQueryStartInColliders;
         private Animator Walking_Animator;
 
+         // Health Pool
+        public int maxHealth = 4;  // Maximum health
+        public int currentHealth;  // Current health
+
+        // Invincibility settings (optional to prevent quick repeated hits)
+        private bool isInvincible = false;
+        [SerializeField] private float invincibilityDuration = 1f;
+
         public bool isFacingRight = true;
 
         #region Interface
@@ -39,13 +49,74 @@ namespace TarodevController
             _col = GetComponent<CapsuleCollider2D>();
             Walking_Animator = GetComponent<Animator>();
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
+
+
+            // Initialize current health
+            currentHealth = maxHealth;
+        }
+
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            // Check if the player collides with an enemy
+            if (collision.CompareTag("Enemy") && !isInvincible)
+            {
+                TakeDamage(1);
+            }
         }
 
         private void Update()
         {
             _time += Time.deltaTime;
             GatherInput();
+
+            // Add code here to update the UI or animations based on current health if needed
+            //if (currentHealth <= 0)
+            //{
+            //    Die();
+            //}
+
         }
+
+
+        // Method to handle taking damage
+        public void TakeDamage(int damageAmount)
+        {
+            // Reduce current health by the damage amount
+            currentHealth -= damageAmount;
+            
+            // Prevent health from going below zero
+            if (currentHealth < 0)
+            {
+                currentHealth = 0;
+            }
+
+            Debug.Log("Player Health: " + currentHealth);
+
+            //Add some visual or audio feedback here for taking damage
+            // Start invincibility if needed
+            StartCoroutine(InvincibilityCoroutine());
+        }
+
+        // Coroutine to make the player invincible for a short period
+        private IEnumerator InvincibilityCoroutine()
+        {
+            isInvincible = true;
+            yield return new WaitForSeconds(invincibilityDuration);
+            isInvincible = false;
+        }
+
+        // Method to handle player death
+        //private void Die()
+        //{
+          //  Debug.Log("Player has died.");
+
+            // Add player death logic here (e.g., play death animation, disable player control)
+            // this.enabled = false; // Disables the PlayerController script
+        //}
+    
+
+
 
         private void GatherInput()
         {
