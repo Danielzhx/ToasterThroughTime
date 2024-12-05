@@ -27,8 +27,7 @@ public class CoinsController : MonoBehaviour
         // Check if the player collided with the coin
         if (collision.CompareTag("Player"))
         {
-            // Add any logic for collecting the coin (e.g., incrementing a score)
-            Debug.Log("Coin collected!");
+
             //Plays the udio of collecting the audio
             AudioSource.PlayClipAtPoint(collectSound, transform.position);
             ToastCoinsManager.instance.score += 1;
