@@ -1,13 +1,11 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour {
-    void Start()
-    {
-        
+    public void StartGame(){
+        SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
-
-    void Update()
-    {
-        
+    public void Quit(){
+        Application.Quit();
     }
 }
