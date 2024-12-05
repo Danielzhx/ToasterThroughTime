@@ -18,16 +18,16 @@ public class Arrow : MonoBehaviour
         float targetRotation = 0f;
         switch (targetPositionIndex)
         {
-            case 0:
+            case 1:
                 targetRotation = anglePosition0;
                 break;
-            case 1:
+            case 2:
                 targetRotation = anglePosition1;
                 break;
-            case 2:
+            case 3:
                 targetRotation = anglePosition2;
                 break;
-            case 3:
+            case 4:
                 targetRotation = anglePosition3;
                 break;
         }
@@ -36,4 +36,16 @@ public class Arrow : MonoBehaviour
         float currentRotation = Mathf.LerpAngle(transform.eulerAngles.z, targetRotation, rotationSpeed * Time.deltaTime);
         transform.RotateAround(pivot.position, Vector3.forward, currentRotation - transform.eulerAngles.z);
     }
+
+
+
+    // Method to set the target position index based on health value
+    public void SetHealthPosition(int health)
+    {
+        // Assuming health ranges from 0 to 4
+        targetPositionIndex = Mathf.Clamp(4 - health, 1, 4);
+    }
+
+
+
 }

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using Unity.Cinemachine;
 
 
 namespace TarodevController
@@ -31,6 +32,9 @@ namespace TarodevController
         private bool isInvincible = false;
         [SerializeField] private float invincibilityDuration = 1f;
 
+        // Reference to the HUD Arrow script
+        public Arrow healthArrow;
+
         public bool isFacingRight = true;
 
         #region Interface
@@ -53,6 +57,13 @@ namespace TarodevController
 
             // Initialize current health
             currentHealth = maxHealth;
+
+
+            if(healthArrow != null)
+            {
+                healthArrow.SetHealthPosition(4-currentHealth);
+            }
+
         }
 
 
@@ -95,6 +106,11 @@ namespace TarodevController
 
             Debug.Log("Player Health: " + currentHealth);
 
+            // Update health HUD arrow position
+            if (healthArrow != null)
+            {
+                healthArrow.SetHealthPosition(4-currentHealth);
+            }
             //Add some visual or audio feedback here for taking damage
             // Start invincibility if needed
             StartCoroutine(InvincibilityCoroutine());
