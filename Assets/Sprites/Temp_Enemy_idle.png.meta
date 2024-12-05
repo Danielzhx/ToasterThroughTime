@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0eb2bb27a815fcd4e928655968ca8fa1
+guid: 1f309461d0f84f079bcf98c6134e32a3
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -97,6 +97,9 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 98cfcad ([Misc]: Unity creating meta files)
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -110,8 +113,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+<<<<<<< HEAD
 =======
 >>>>>>> e36416b5def7c7af07f52221ebe947710384295d
+=======
+>>>>>>> 98cfcad ([Misc]: Unity creating meta files)
   spriteSheet:
     serializedVersion: 2
     sprites:
