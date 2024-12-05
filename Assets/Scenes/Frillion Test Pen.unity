@@ -3835,76 +3835,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5453125301331248497, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
   m_PrefabInstance: {fileID: 7410193314361419925}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &789986600 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 696181265270854024, guid: f53f36c273ffe96508d939ccfd8e7f75, type: 3}
-  m_PrefabInstance: {fileID: 1843692383521180047}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &789986601 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4475622245169491717, guid: f53f36c273ffe96508d939ccfd8e7f75, type: 3}
   m_PrefabInstance: {fileID: 1843692383521180047}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &789986603
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789986600}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.48, y: 0.59}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.48, y: 0.59}
-  m_EdgeRadius: 0
---- !u!114 &789986604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789986600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80aba37f58d2a6fcaba83d15a4e71a0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelEndAnimator: {fileID: 1262529188}
-  playerControlls: {fileID: 789768075}
 --- !u!1 &829145304
 GameObject:
   m_ObjectHideFlags: 0
@@ -9023,16 +8958,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8035622287142915021, guid: f53f36c273ffe96508d939ccfd8e7f75, type: 3}
+      propertyPath: playerControlls
+      value: 
+      objectReference: {fileID: 789768075}
+    - target: {fileID: 8035622287142915021, guid: f53f36c273ffe96508d939ccfd8e7f75, type: 3}
+      propertyPath: levelEndAnimator
+      value: 
+      objectReference: {fileID: 1262529188}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 696181265270854024, guid: f53f36c273ffe96508d939ccfd8e7f75, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 789986604}
-    - targetCorrespondingSourceObject: {fileID: 696181265270854024, guid: f53f36c273ffe96508d939ccfd8e7f75, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 789986603}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f53f36c273ffe96508d939ccfd8e7f75, type: 3}
 --- !u!1001 &1983532359329305665
 PrefabInstance:
