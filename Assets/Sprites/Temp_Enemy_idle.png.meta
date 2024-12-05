@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0eb2bb27a815fcd4e928655968ca8fa1
+guid: 1f309461d0f84f079bcf98c6134e32a3
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,7 +96,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-<<<<<<< HEAD
   - serializedVersion: 4
     buildTarget: WebGL
     maxTextureSize: 2048
@@ -110,8 +109,7 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-=======
->>>>>>> e36416b5def7c7af07f52221ebe947710384295d
+
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -119,20 +117,20 @@ TextureImporter:
       name: Temp_Enemy_idle_0
       rect:
         serializedVersion: 2
-        x: 14
+        x: 13
         y: 0
-        width: 18
-        height: 24
+        width: 21
+        height: 26
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: db12e85b3b38038a0800000000000000
-      internalID: -6327412668587171395
+      spriteID: ed081dfcc0fc8b7408eada8f63a7d86f
+      internalID: 912492396
       vertices: []
       indices: 
       edges: []
@@ -141,7 +139,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1968d03ac940df44d83c78c52e219238
     internalID: 0
     vertices: []
     indices: 
@@ -150,7 +148,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Temp_Enemy_idle_0: 912492396
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
