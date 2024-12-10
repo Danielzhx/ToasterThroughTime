@@ -29,9 +29,11 @@ namespace TarodevController
         public int currentHealth;  // Current health
 
         // Invincibility settings (optional to prevent quick repeated hits)
-        private bool isInvincible = false;
+        //private bool isInvincible = false;
         private Animator _anim;
+        [SerializeField] private bool isInvincible = false;
         [SerializeField] private float invincibilityDuration = 1f;
+        public bool IsInvincible => isInvincible;
 
         // Reference to the HUD Arrow script
         public Arrow healthArrow;
@@ -72,7 +74,7 @@ namespace TarodevController
         private void OnTriggerEnter2D(Collider2D collision)
         {
             // Check if the player collides with an enemy
-            if (collision.CompareTag("Enemy") && !isInvincible)
+            if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
             {
                 TakeDamage(1);
             }
@@ -113,7 +115,7 @@ namespace TarodevController
             {
                 healthArrow.SetHealthPosition(4 - currentHealth);
             }
-            //Add some visual or audio feedback here for taking damage
+
             // Start invincibility if needed
             StartCoroutine(InvincibilityCoroutine());
         }
@@ -235,6 +237,33 @@ namespace TarodevController
             if (_grounded || CanUseCoyote) ExecuteJump();
 
             _jumpToConsume = false;
+        }
+        public float bounceMultiplier = 1f;
+        private bool justBounced = false;
+        [SerializeField] private Collider2D feetCollider;
+        public void SetJustBounced(float delay = 0.2f)
+        {
+            justBounced = true;
+            StartCoroutine(ResetJustBounced(delay));
+        }
+        private IEnumerator ResetJustBounced(float delay)
+        {
+            yield return new WaitForSeconds(delay);
+            justBounced = false;
+        }
+        public void Bounce()
+        {
+            // Reset vertical velocity before applying bounce
+            _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0);
+
+            // Apply jump power as a bounce using the multiplier
+            _frameVelocity.y = _stats.JumpPower * bounceMultiplier;
+
+            // Update Rigidbody velocity
+            _rb.linearVelocity = _frameVelocity;
+
+            // Optionally, trigger jump animation or effects
+            Jumped?.Invoke();
         }
 
         private void ExecuteJump()

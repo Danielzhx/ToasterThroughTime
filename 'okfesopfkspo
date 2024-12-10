@@ -1,0 +1,525 @@
+[33mcommit 1a04f89c9ea0ba37a5f1299c91329d8467ce02f0[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: e4ef157 b544430
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Mon Dec 9 13:37:34 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime into main
+
+[33mcommit e4ef157211f1f4fd25811d045b23e3bb8db2c2ee[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Mon Dec 9 13:37:00 2024 +0000
+
+    fixed outlet layer
+
+[33mcommit b54443015b90e2023d8bdb5afeb77323335617f5[m
+Merge: fc439a4 ef4b748
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Mon Dec 9 12:39:20 2024 +0000
+
+    Merge conflict fixed
+
+[33mcommit fc439a4c8f71a9c6dcc6a9dde20018c282791334[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Mon Dec 9 12:36:43 2024 +0000
+
+    some redundant changes
+
+[33mcommit ef4b7486eb514003c76dc2208d6c583fecf15ce7[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Sat Dec 7 17:46:00 2024 +0000
+
+    [Bugfix]: Fixed the floaty feeling of zaps controls and wall jumping is gone
+
+[33mcommit 267a6b83197bed488e3a3cab5c10857da79d170d[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Fri Dec 6 11:10:48 2024 +0000
+
+    [Unity]: Unity adding renderer stuff
+
+[33mcommit a7213b715cf25fea5d7336537e032373a3845816[m
+Merge: c2b6881 236dbd1
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 20:45:44 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit c2b688171129b43657f0a163bb3a47dd44a39375[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 20:45:40 2024 +0000
+
+    just library stuff
+
+[33mcommit 236dbd14eb190d843584471862b92cf8724e4572[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 20:41:23 2024 +0000
+
+    Fix Errors in Projectile
+
+[33mcommit 55a8f8acbeec10f0974455faee30e17509070e4b[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 19:15:59 2024 +0000
+
+    2 platforms were missing the new style
+
+[33mcommit e9201d1398e4ed7b028ef5397d43bec1f855d31a[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 19:18:35 2024 +0000
+
+    [MainScene]: Added three poweroutlets that charge up Zap
+
+[33mcommit 45001ddc658d497a64391bfd1dd1aa20ec80cc63[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 19:02:54 2024 +0000
+
+    [Unity]: Unity adding meta files
+
+[33mcommit cb90cb47b8d623eebef43cf19db01bcc6c1c3e2d[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 19:01:16 2024 +0000
+
+    [Mechanic]:Now zap has limited charges that can be replenished
+
+[33mcommit b77846ed544534418a89c7d732f9ddeff7a7c52e[m
+Merge: f664aee b730128
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 18:44:15 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit f664aeeaef350290fab0ba43d1f1f1a50c01e510[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 18:44:06 2024 +0000
+
+    Platform textures updated
+
+[33mcommit b730128fd4d7ef17d7f9b4582b0e420e9128183b[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 18:20:24 2024 +0000
+
+    [Anim]: Animations for the end screen and fixed zap attack sprite
+
+[33mcommit 98ad72f0853fcf7065356b67a4556b5dfa7db6b5[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 18:18:44 2024 +0000
+
+    [QoL]:Added an end screen to the alpha
+
+[33mcommit 2ebc733f2462388b39ca721cd41ee483490a1f70[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 17:50:57 2024 +0000
+
+    main scene D/M reconciled
+
+[33mcommit ef9638e6f2422d420efa945fa5524a687de90f21[m
+Merge: c529d80 6d8cdfa
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 17:34:50 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit c529d80688fcdf03e7f7f5a9f9f4baba2fe1a57a[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 17:34:38 2024 +0000
+
+    Made a new main scene that has everything we worked on except the projectiles
+
+[33mcommit 6d8cdfa6be87d852788fa7abe53cf3dc71e6e0fc[m
+Merge: ad22a2c fe45e6e
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 16:57:09 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit ad22a2c84b5b3f71bbf6f98e773791da8bdf7110[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 16:57:01 2024 +0000
+
+    Health wheel functioning
+
+[33mcommit fe45e6e2a35c1ea40aecc204ec8a5d408798b570[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 16:38:32 2024 +0000
+
+    [QoL]:Added a start screen scene
+
+[33mcommit d2fe5715d50820d7cd601b674023a3c6ab13590d[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 16:04:36 2024 +0000
+
+    [Scene]: Made the start screen scene
+
+[33mcommit fda4bcc671af8174fd548afddc8afcd8e733cf85[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 16:04:24 2024 +0000
+
+    [Scene]: Made the start screen scene
+
+[33mcommit 66643af09b38298af59b498d889d6b0464dbd0a1[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 15:55:56 2024 +0000
+
+    Scripts categorised
+
+[33mcommit 7054673a423d86b130b31152c0dfee6d977b6f94[m
+Merge: f482d09 7ae899b
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 15:51:48 2024 +0000
+
+    Health mechanic improved
+
+[33mcommit f482d09d7ceafd5d1687bceebde436530e8efe2f[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 15:50:11 2024 +0000
+
+    Health mechanic improved
+
+[33mcommit 7ae899b17b6a74c09489ac51da93d91ad7210161[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 15:48:48 2024 +0000
+
+    [Unity]: Unity made some fonts
+
+[33mcommit 1f032fb37acef6e5bc11fe31ced33a32f99768be[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 15:35:50 2024 +0000
+
+    [Orginization]:Made a prefab out of Zap
+
+[33mcommit b6999c0a290af7cc0e5f3cb210d087e0101c0b52[m
+Merge: d571498 bc0969e
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 15:33:40 2024 +0000
+
+    Player health and enemy damage added
+
+[33mcommit d571498db52fafc3135cb967873275eca5a5feb7[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 15:28:12 2024 +0000
+
+    Player health and enemy damage added
+
+[33mcommit bc0969ee3b42633270f8dbadbd86fb3af15a37a1[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 15:27:34 2024 +0000
+
+    Removed the debug.log
+
+[33mcommit af2a095e64840694f4744a27ccac2134dd799905[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 15:25:13 2024 +0000
+
+    The coins are on the main scene
+
+[33mcommit 34e98911d8119b55b3a7c7fd7216ada9aacb4133[m
+Merge: cb98dc2 827352c
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 15:22:11 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit cb98dc2d49966e485b8c035860efcb21aac66902[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 15:22:06 2024 +0000
+
+    Finished the whole coin collecting mechanics
+
+[33mcommit ec14e51b7d157f9295cffc3e25785e340c25184d[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 14:09:18 2024 +0000
+
+    Enemy death script created
+
+[33mcommit 827352c7b8f8eae197311a4f9f82e347035334dd[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 14:04:04 2024 +0000
+
+    [Orginization]: Made my own scene for testing and fixed the enemy sprite
+
+[33mcommit 6156c7d33056c1eff5f90187880c594c248f970d[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 13:48:05 2024 +0000
+
+    [Unity]: Unity added meta file for plug sprite
+
+[33mcommit c6a007cab717e8dd0a2f80b621f7126df621074a[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 13:47:18 2024 +0000
+
+    [Art]: Added the plug sprite
+
+[33mcommit fe5304361ce2b2b28d4844d6f1c738d1106b0de5[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 13:33:22 2024 +0000
+
+    [Orginization]: Saved platform as a prefab
+
+[33mcommit d4aa62f87f6c5666fa36c1a602124c2fefcc4f77[m
+Merge: 943995b afaabbc
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 13:24:17 2024 +0000
+
+    projectile sprite update
+
+[33mcommit 943995b8d25f93647d881afd6c611b7f6532667b[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Thu Dec 5 13:21:04 2024 +0000
+
+    projectile sprite update
+
+[33mcommit afaabbc9d0c59cbc1614dacd70564e2d646a6e92[m
+Merge: 1e88b62 3ce9552
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 13:18:19 2024 +0000
+
+    solving the merge confict
+
+[33mcommit 3ce9552332c247732a4780afc3d360364502b607[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Thu Dec 5 13:19:25 2024 +0000
+
+    [Misc]: Unity creating meta files
+
+[33mcommit 1e88b6263b0276f97f7e850f0214cc5cd537bfdc[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Thu Dec 5 13:15:18 2024 +0000
+
+    deleted the old main scene and made elvar's scene as the new main
+
+[33mcommit e1fe1853d8c06014f4c441ea281cbb1480c3ec10[m
+Merge: 148c27b e36416b
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Wed Dec 4 22:00:44 2024 +0000
+
+    Shooting in both directions and projectile sprite
+
+[33mcommit 148c27b63e869c4c01fde8ef7e0035ee7e7d203b[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Wed Dec 4 21:58:13 2024 +0000
+
+    Shooting in both directions and projectile sprite
+
+[33mcommit e36416b5def7c7af07f52221ebe947710384295d[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 21:50:53 2024 +0000
+
+    fxed paltforms
+
+[33mcommit 45b5943a6fc7424b933e228818a7e9391fcbfa25[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 21:43:41 2024 +0000
+
+    level design
+
+[33mcommit 9eafb57d14ba1c6fad6a9b31ec5fc21941c23320[m
+Merge: 6685a25 05c6b86
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 21:05:24 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime into main
+
+[33mcommit 6685a252d852c69dabd410945e5adae427a87ccb[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 20:59:56 2024 +0000
+
+    test
+
+[33mcommit 05c6b86f142ebd889bc3382bb73187397e0c4975[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Wed Dec 4 20:02:33 2024 +0000
+
+    [Art]: Added temporary sprite for the enemies
+
+[33mcommit 45a3ddc5278448bbf74f5040c44a35d305ebcd99[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Wed Dec 4 18:08:54 2024 +0000
+
+    Fixid the walking animation on the main scene
+
+[33mcommit c1c4335aef6987208855239bcf14d677a3a0aacb[m
+Merge: 8e11a54 bda0bc6
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Wed Dec 4 17:47:45 2024 +0000
+
+    Fixing the conflict
+
+[33mcommit 8e11a5421e700e39f83426e2b302c2c4ae3a629d[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Wed Dec 4 17:39:19 2024 +0000
+
+    Did the walking animation
+
+[33mcommit bda0bc6513d6a2af2964610cc64d2d99ab994d3f[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 17:37:31 2024 +0000
+
+    push to main
+
+[33mcommit a6937f0c241e43dab45ea7d388e6feda398883fd[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Wed Dec 4 17:41:10 2024 +0000
+
+    [Misc]:Just some cleanup
+
+[33mcommit 0f3a0f5ad35722275b55fa547442fe81ae1ef6d5[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Wed Dec 4 17:28:24 2024 +0000
+
+    [Art]:Added the rest of Zaps animations
+
+[33mcommit 7b6ec448d6073779dca8d5723f58b3f2e5dee9e8[m
+Merge: 8e6eec2 df23d81
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 17:32:18 2024 +0000
+
+    bug fixes
+
+[33mcommit 8e6eec2cd8dbc6d995f1ab3a1f68976ec46dc1e8[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 17:22:23 2024 +0000
+
+    made hud and camera
+
+[33mcommit df23d8164f91161f6d7e6b375e6a23375e8720c3[m
+Merge: 639e42e 048e2b1
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Wed Dec 4 15:19:02 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit 048e2b1ca2597dd87f9560f3af931e063c99fcda[m
+Author: Frillion <fridriksoebech@gmail.com>
+Date:   Wed Dec 4 15:25:19 2024 +0000
+
+    [Art]:Added Zaps walk Cycle
+
+[33mcommit 639e42ecf8a96d744778ff1c9132b5da432596be[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Wed Dec 4 15:18:50 2024 +0000
+
+    Changed naming of a sprite
+
+[33mcommit 36c6cd815a9b92ff4f79da11e3e567febf414427[m
+Merge: e944216 acaaa00
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Wed Dec 4 12:57:47 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit e9442164ac13fe4eafde760432bf514a6de346bf[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Wed Dec 4 12:57:42 2024 +0000
+
+    Fixing the projectil
+
+[33mcommit acaaa0078f80de56998eb4ec4d35582e9a546727[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Wed Dec 4 12:57:03 2024 +0000
+
+    fixed proectile
+
+[33mcommit 230341e461efde620f2c22d8cb796e424233098d[m
+Merge: 60d0d0b 7c4cce0
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Tue Dec 3 18:43:03 2024 +0000
+
+    Projectile System
+
+[33mcommit 60d0d0bf13f41cf26d3acf986f7e62b016183abe[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Tue Dec 3 18:39:29 2024 +0000
+
+    Projectile System
+
+[33mcommit 7c4cce0c9149c3debcd849bb0645ed7128de1333[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 17:12:12 2024 +0000
+
+    Handling the character's direction on moving
+
+[33mcommit 6416d99c63f1c683c22b89870b81b7431f60c405[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 16:29:52 2024 +0000
+
+    changed the colliders size in the main scene
+
+[33mcommit f427aea74d5000badac6828e41f152cf6e29151f[m
+Merge: 2a75f04 14a6ceb
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 16:26:44 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit 2a75f049b057a53c990c29d0fddf25aa69ba8ea6[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 16:26:36 2024 +0000
+
+    Changed the platform coliders sizes
+
+[33mcommit 14a6cebcd7893924a4ffd7553587de75959a0992[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Tue Dec 3 16:25:06 2024 +0000
+
+    fixed border and added root physics
+
+[33mcommit 7bd85ebd99bc6539080f99f730544c78ac206654[m
+Author: Elvar Agust <elvarbesti@gmail.com>
+Date:   Tue Dec 3 16:12:00 2024 +0000
+
+    enemies and path following
+
+[33mcommit 72658a0ce9e8655e79313c3682068b922385e604[m
+Merge: 8f829c0 18a385d
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 14:54:18 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+
+[33mcommit 8f829c0fa8b482ad2909520a98691b7a2df735a1[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 14:54:09 2024 +0000
+
+    Changed the sample scene so the character doesn't get stuck under the platforms
+
+[33mcommit 18a385d182ecda4d2b5994446e7a5840fa37c18e[m
+Merge: 6045108 b517b94
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Tue Dec 3 14:45:03 2024 +0000
+
+    Merge branch 'main' of https://github.com/Danielzhx/ToasterThroughTime
+    "New sprite added"
+
+[33mcommit 60451086d63f3cafccfa4be2aca29b6b44cbe3c5[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Tue Dec 3 14:44:54 2024 +0000
+
+    New sprite added
+
+[33mcommit b517b94ca9eda18b175f017f1dd62a343c576a25[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 14:41:08 2024 +0000
+
+    Fixed the controller
+
+[33mcommit cf37a2bd8cf05cf86241faa878ebbb17306c7bf0[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Tue Dec 3 13:43:03 2024 +0000
+
+    Now I know what's going on, the problem was with the sizes so there is a fixed size scene that is working
+
+[33mcommit 41ffa034f2ca93b2ea89ca642aff627936024e8c[m
+Author: Danielzhx <danielzhrdn@gmail.com>
+Date:   Mon Dec 2 19:36:23 2024 +0000
+
+    Again, Idk why is this changing
+
+[33mcommit 34dfb98579f67e2d9cce17a5eaeabe3978de80d0[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Mon Dec 2 19:33:41 2024 +0000
+
+    Saving alpha scene
+
+[33mcommit 804a5f3a1feea7df722d60459e2fe9693867a211[m
+Author: Maximilian Klimko <82115185+Mamigako@users.noreply.github.com>
+Date:   Mon Dec 2 19:20:55 2024 +0000
+
+    alpha scene
