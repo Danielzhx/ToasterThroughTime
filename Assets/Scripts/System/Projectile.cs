@@ -3,41 +3,46 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float lifespan = 2f;
-    private float starttime;
-    public float ProjectileSpeed = 5;
+  public float lifespan = 2f;
+  private float starttime;
+  public float ProjectileSpeed = 5;
+  public SpriteRenderer zap;
 
-    public Vector2 projectileDirection;
-    
-    private Rigidbody2D ProjectileBody;
-    public PlayerController playerController;
- 
+  private Vector2 projectileDirection;
+  private Rigidbody2D ProjectileBody;
+  public PlayerController playerController;
 
 
-    void Start()    
-    {ProjectileBody = GetComponent<Rigidbody2D>();}
-  
-       void Update() {
 
-        if ((Time.time - starttime) >= lifespan){
-            this.gameObject.SetActive(false);     
-        }
+  void Start()
+  { ProjectileBody = GetComponent<Rigidbody2D>(); }
 
-        Shoot();
-       
-       }
-        void OnEnable(){
-        starttime =  Time.time;
-        Vector2 direction = playerController.isFacingRight ? transform.right : -transform.right;
-        projectileDirection = direction;    
+  void Update()
+  {
+
+    if ((Time.time - starttime) >= lifespan)
+    {
+      this.gameObject.SetActive(false);
     }
 
-       void Shoot(){
+    Shoot();
+
+  }
+  void OnEnable()
+  {
+    starttime = Time.time;
+    Vector2 direction = zap.flipX ? -transform.right : transform.right;
+    projectileDirection = direction;
+  }
+
+  void Shoot()
+  {
 
 
-         if (ProjectileBody != null){
-        ProjectileBody.linearVelocity = projectileDirection * ProjectileSpeed;
+    if (ProjectileBody != null)
+    {
+      ProjectileBody.linearVelocity = projectileDirection * ProjectileSpeed;
 
-         }
-       }
+    }
+  }
 }

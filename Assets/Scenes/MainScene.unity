@@ -1793,14 +1793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_TagString
-      value: Bullet
-      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: zap
+      value: 
+      objectReference: {fileID: 7884605605388044455}
     - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
       propertyPath: playerController
       value: 
@@ -6763,14 +6759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_TagString
-      value: Bullet
-      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: zap
+      value: 
+      objectReference: {fileID: 7884605605388044455}
     - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
       propertyPath: playerController
       value: 
@@ -7244,6 +7236,10 @@ PrefabInstance:
       propertyPath: charges
       value: 
       objectReference: {fileID: 324196633}
+    - target: {fileID: 4578434444870778932, guid: 8b4d1328273ee3c06a29bdf6173c061a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5441430129105419637, guid: 8b4d1328273ee3c06a29bdf6173c061a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 31.8
@@ -8068,14 +8064,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_TagString
-      value: Bullet
-      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: zap
+      value: 
+      objectReference: {fileID: 7884605605388044455}
     - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
       propertyPath: playerController
       value: 
@@ -8355,6 +8347,10 @@ PrefabInstance:
       propertyPath: charges
       value: 
       objectReference: {fileID: 324196633}
+    - target: {fileID: 4578434444870778932, guid: 8b4d1328273ee3c06a29bdf6173c061a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5441430129105419637, guid: 8b4d1328273ee3c06a29bdf6173c061a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.2
@@ -8744,14 +8740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile
       objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6092000161487331442, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
-      propertyPath: m_TagString
-      value: Bullet
-      objectReference: {fileID: 0}
+    - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
+      propertyPath: zap
+      value: 
+      objectReference: {fileID: 7884605605388044455}
     - target: {fileID: 7894648758648606186, guid: 87c3ede1276b9c342a608a08417f0bd0, type: 3}
       propertyPath: playerController
       value: 
@@ -11236,6 +11228,10 @@ PrefabInstance:
       propertyPath: charges
       value: 
       objectReference: {fileID: 324196633}
+    - target: {fileID: 4578434444870778932, guid: 8b4d1328273ee3c06a29bdf6173c061a, type: 3}
+      propertyPath: m_SortingOrder
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 5441430129105419637, guid: 8b4d1328273ee3c06a29bdf6173c061a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.1
@@ -11382,6 +11378,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aeeb4d68475a4f4439d891695e3be16b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &7884605605388044455 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7369548172332448400, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+  m_PrefabInstance: {fileID: 7884605605388044452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8108446819265558215
 PrefabInstance:
   m_ObjectHideFlags: 0
