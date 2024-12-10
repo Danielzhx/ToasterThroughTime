@@ -30,6 +30,7 @@ namespace TarodevController
 
         // Invincibility settings (optional to prevent quick repeated hits)
         private bool isInvincible = false;
+        private Animator _anim;
         [SerializeField] private float invincibilityDuration = 1f;
 
         // Reference to the HUD Arrow script
@@ -44,7 +45,6 @@ namespace TarodevController
         public event Action Jumped;
 
         #endregion
-
         private float _time;
 
         private void Awake()
@@ -53,7 +53,7 @@ namespace TarodevController
             _col = GetComponent<CapsuleCollider2D>();
             //Walking_Animator = GetComponent<Animator>();
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
-
+            _anim = GetComponent<Animator>();
 
             // Initialize current health
             currentHealth = maxHealth;
@@ -99,9 +99,12 @@ namespace TarodevController
             currentHealth -= damageAmount;
 
             // Prevent health from going below zero
-            if (currentHealth < 0)
+            if (currentHealth <= 0)
             {
                 currentHealth = 0;
+                _anim.SetTrigger("Dying");
+                _rb.linearVelocity = new Vector2(0, 0);
+                this.enabled = false;
             }
 
 
