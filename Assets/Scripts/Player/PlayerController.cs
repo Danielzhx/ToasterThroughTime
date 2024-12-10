@@ -22,9 +22,9 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
-        private Animator Walking_Animator;
+        //private Animator Walking_Animator;
 
-         // Health Pool
+        // Health Pool
         public int maxHealth = 4;  // Maximum health
         public int currentHealth;  // Current health
 
@@ -51,7 +51,7 @@ namespace TarodevController
         {
             _rb = GetComponent<Rigidbody2D>();
             _col = GetComponent<CapsuleCollider2D>();
-            Walking_Animator = GetComponent<Animator>();
+            //Walking_Animator = GetComponent<Animator>();
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
 
 
@@ -59,9 +59,9 @@ namespace TarodevController
             currentHealth = maxHealth;
 
 
-            if(healthArrow != null)
+            if (healthArrow != null)
             {
-                healthArrow.SetHealthPosition(4-currentHealth);
+                healthArrow.SetHealthPosition(4 - currentHealth);
             }
 
         }
@@ -97,19 +97,18 @@ namespace TarodevController
         {
             // Reduce current health by the damage amount
             currentHealth -= damageAmount;
-            
+
             // Prevent health from going below zero
             if (currentHealth < 0)
             {
                 currentHealth = 0;
             }
 
-            Debug.Log("Player Health: " + currentHealth);
 
             // Update health HUD arrow position
             if (healthArrow != null)
             {
-                healthArrow.SetHealthPosition(4-currentHealth);
+                healthArrow.SetHealthPosition(4 - currentHealth);
             }
             //Add some visual or audio feedback here for taking damage
             // Start invincibility if needed
@@ -127,12 +126,12 @@ namespace TarodevController
         // Method to handle player death
         //private void Die()
         //{
-          //  Debug.Log("Player has died.");
+        //  Debug.Log("Player has died.");
 
-            // Add player death logic here (e.g., play death animation, disable player control)
-            // this.enabled = false; // Disables the PlayerController script
+        // Add player death logic here (e.g., play death animation, disable player control)
+        // this.enabled = false; // Disables the PlayerController script
         //}
-    
+
         #endregion
 
 
@@ -157,10 +156,10 @@ namespace TarodevController
                 _timeJumpWasPressed = _time;
             }
 
-            if (_frameInput.Move.x == 1 || _frameInput.Move.x == -1)
-            {
-                Walking_Animator.SetTrigger("InitiateWalk");
-            }
+            // if (_frameInput.Move.x == 1 || _frameInput.Move.x == -1)
+            // {
+            //     Walking_Animator.SetTrigger("InitiateWalk");
+            // }
         }
 
         private void FixedUpdate()
@@ -261,26 +260,26 @@ namespace TarodevController
             {
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
 
-                
-                // Flip character direction
-                FlipCharacter(_frameInput.Move.x);
 
-            }   
-        }
-
-        private void FlipCharacter(float direction)
-        {
-            Vector3 scale = transform.localScale;
-            if (direction > 0 && scale.x < 0 || direction < 0 && scale.x > 0)
-            {
-                scale.x *= -1; // Flip the x-scale
-                transform.localScale = scale;
-                // if flipped while facing right, face left and vice versa.
-                if (isFacingRight){isFacingRight = false;}
-                else {isFacingRight = true;}
+                // // Flip character direction
+                // FlipCharacter(_frameInput.Move.x);
 
             }
         }
+
+        // private void FlipCharacter(float direction)
+        // {
+        //     Vector3 scale = transform.localScale;
+        //     if (direction > 0 && scale.x < 0 || direction < 0 && scale.x > 0)
+        //     {
+        //         scale.x *= -1; // Flip the x-scale
+        //         transform.localScale = scale;
+        //         // if flipped while facing right, face left and vice versa.
+        //         if (isFacingRight){isFacingRight = false;}
+        //         else {isFacingRight = true;}
+
+        //     }
+        // }
 
         #endregion
 
@@ -305,8 +304,8 @@ namespace TarodevController
         private void ApplyMovement()
         {
             _rb.linearVelocity = _frameVelocity;
-            Walking_Animator.SetInteger("YVelocity", (int)_frameVelocity.y);
-            Walking_Animator.SetFloat("MovementVelocity", Mathf.Abs(_frameVelocity.x));
+            // Walking_Animator.SetInteger("YVelocity", (int)_frameVelocity.y);
+            // Walking_Animator.SetFloat("MovementVelocity", Mathf.Abs(_frameVelocity.x));
         }
 
 #if UNITY_EDITOR

@@ -17,23 +17,28 @@ public class PlayerShooting : MonoBehaviour
 
     private int currentProjIndex = 0;
 
-    private PlayerController playerController; 
+    private PlayerController playerController;
 
+    private Animator _anim;
 
-    
+    void Awake()
+    {
+        _anim = GetComponent<Animator>();
+    }
 
     void Update()
     {
         // Check if the player presses the fire button (e.g., left mouse button or space)
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && charges.currentCharges > 0)
         {
-            Shoot();
+            _anim.SetTrigger("Attack");
         }
     }
 
     void Shoot()
     {
-        if(currentProjIndex >= Projectiles.Length){
+        if (currentProjIndex >= Projectiles.Length)
+        {
             currentProjIndex = 0;
         }
 
@@ -41,8 +46,10 @@ public class PlayerShooting : MonoBehaviour
         GameObject currentProjectile = Projectiles[currentProjIndex];
         Rigidbody2D rb = currentProjectile.GetComponent<Rigidbody2D>();
 
-        if (!currentProjectile.gameObject.activeSelf) {
-            if (rb != null && charges.currentCharges > 0){
+        if (!currentProjectile.gameObject.activeSelf)
+        {
+            if (rb != null)
+            {
                 currentProjectile.SetActive(true);
                 currentProjIndex++;
                 currentProjectile.transform.position += firePoint.position - currentProjectile.transform.position;

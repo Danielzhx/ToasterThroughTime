@@ -11,11 +11,9 @@ void OnTriggerEnter2D(Collider2D collision)
     {
         // Disable the SpriteRenderer to make the enemy invisible
         GetComponent<SpriteRenderer>().enabled = false;
-        Debug.Log("sprite derendered");
 
         // Disable the Collider to prevent further collisions
         GetComponent<Collider2D>().enabled = false;
-        Debug.Log("collider derendered");
     }
 }
 
