@@ -8,6 +8,9 @@ namespace TarodevController
         [Header("LAYERS")] [Tooltip("Set this to the layer your player is on")]
         public LayerMask PlayerLayer;
 
+        [Tooltip("Set this to the layer your ground is on")]
+        public LayerMask GroundLayer;
+
         [Header("INPUT")] [Tooltip("Makes all Input snap to an integer. Prevents gamepads from walking slowly. Recommended value is true to ensure gamepad/keybaord parity.")]
         public bool SnapInput = true;
 
