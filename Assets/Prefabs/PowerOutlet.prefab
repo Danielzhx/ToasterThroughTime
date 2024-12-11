@@ -299,10 +299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7efcb8a231ea533bc987e2e25404d2ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brokenOutleltSprite: {fileID: 1162181172896106963, guid: b063ca2d6be600e79ab69176a139351b, type: 3}
   charges: {fileID: 0}
   gainedCharges: 1
   Zap: {fileID: 0}
-  playerController: {fileID: 0}
   RightChargePoint: {fileID: 724538483605692673}
   LeftChargePoint: {fileID: 2212552642469271815}
-  _speeds: 0

@@ -178,7 +178,8 @@ MonoBehaviour:
   invincibilityDuration: 1
   healthArrow: {fileID: 0}
   isFacingRight: 1
-  bounceMultiplier: 1
+  hasToast: 0
+  doubleJumpMultiplier: 1.5
   feetCollider: {fileID: 0}
 --- !u!114 &498741902525276008
 MonoBehaviour:

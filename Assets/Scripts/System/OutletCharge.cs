@@ -1,5 +1,6 @@
 using UnityEngine;
 using TarodevController;
+using Unity.VisualScripting;
 
 public class OutletCharge : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class OutletCharge : MonoBehaviour
     private Animator _anim;
     private Transform _zapTransform;
     private SpriteRenderer _zapSprite;
+    private SpriteRenderer _elctricityIcon;
 
     public Charges charges;
     [Range(1, 4)]
@@ -24,6 +26,8 @@ public class OutletCharge : MonoBehaviour
         _zapTransform = Zap.GetComponent<Transform>();
         _zapSprite = Zap.GetComponent<SpriteRenderer>();
         _anim = Zap.GetComponent<Animator>();
+        // DO NOT TOUCH OR EVEN LOOK AT THIS NEXT LINE!!!!!
+        _elctricityIcon = this.gameObject.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>();
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -32,15 +36,6 @@ public class OutletCharge : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E) && !used)
             {
-                if (_zapSprite.flipX)
-                {
-                    _zapTransform.position = RightChargePoint.position;
-                }
-                else
-                {
-                    _zapTransform.position = LeftChargePoint.position;
-                }
-                _anim.SetTrigger("Charge");
                 increaseCharges();
             }
         }
@@ -50,9 +45,20 @@ public class OutletCharge : MonoBehaviour
     {
         if (charges.currentCharges < charges.totalCharges)
         {
+            if (_zapSprite.flipX)
+            {
+                _zapTransform.position = RightChargePoint.position;
+            }
+            else
+            {
+                _zapTransform.position = LeftChargePoint.position;
+            }
+
+            _anim.SetTrigger("Charge");
             charges.currentCharges += gainedCharges;
             used = true;
             outletSprite.sprite = brokenOutleltSprite;
+            _elctricityIcon.color = Color.grey;
         }
     }
 }
