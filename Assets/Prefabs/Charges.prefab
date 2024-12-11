@@ -250,7 +250,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7846170973423094015}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -394.48257, y: 163, z: -1014.5198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -280,7 +280,7 @@ MonoBehaviour:
   - {fileID: 8973644931829202750}
   - {fileID: 4108012984712555613}
   - {fileID: 8069087224638280048}
-  fullCharge: {fileID: 7960551294188599487, guid: 980c192008e0b094c90644a2a1fcfe6e, type: 3}
+  fullCharge: {fileID: -3742492515520179674, guid: c45df6e4ae47970a2b56371a07263860, type: 3}
   emptyCharge: {fileID: 3427775600812746229, guid: 49b733f89348fe1419079115781bedcf, type: 3}
 --- !u!1 &8467864847789639949
 GameObject:

@@ -58,7 +58,7 @@ public class OutletCharge : MonoBehaviour
             charges.currentCharges += gainedCharges;
             used = true;
             outletSprite.sprite = brokenOutleltSprite;
-            _elctricityIcon.color = Color.grey;
+            _elctricityIcon.color = new Color(0.25f, 0.25f, 0.25f, 1);
         }
     }
 }
