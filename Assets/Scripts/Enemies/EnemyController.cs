@@ -1,7 +1,7 @@
 using UnityEngine;
 using TarodevController;
 
-public class EnemyDeath : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Collider2D enemyCollider2D;

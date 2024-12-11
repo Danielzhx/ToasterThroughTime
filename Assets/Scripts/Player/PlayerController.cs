@@ -22,6 +22,7 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
+        private bool zapDead = false;
         //private Animator Walking_Animator;
 
         // Health Pool
@@ -68,6 +69,15 @@ namespace TarodevController
 
         }
 
+        void enableController()
+        {
+            this.enabled = true;
+        }
+
+        void disableController()
+        {
+            this.enabled = false;
+        }
 
         #region Health
 
@@ -104,7 +114,11 @@ namespace TarodevController
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                _anim.SetTrigger("Dying");
+                if (!zapDead)
+                {
+                    _anim.SetTrigger("Dying");
+                    zapDead = true;
+                }
                 _rb.linearVelocity = new Vector2(0, 0);
                 this.enabled = false;
             }

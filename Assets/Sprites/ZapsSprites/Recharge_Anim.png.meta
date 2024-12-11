@@ -284,15 +284,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Recharge_Anim_0
+      name: 38
       rect:
         serializedVersion: 2
-        x: 7
-        y: 383
-        width: 34
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3
+        y: 384
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -306,15 +306,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_1
+      name: 26
       rect:
         serializedVersion: 2
-        x: 70
-        y: 383
-        width: 48
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 67
+        y: 384
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -328,15 +328,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_2
+      name: 27
       rect:
         serializedVersion: 2
-        x: 137
-        y: 383
-        width: 42
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 131
+        y: 384
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -350,81 +350,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_3
+      name: 28
       rect:
         serializedVersion: 2
-        x: 139
-        y: 407
-        width: 22
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c4096fe0a28a5f70800000000000000
-      internalID: 9176790818443822279
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_4
-      rect:
-        serializedVersion: 2
-        x: 161
-        y: 406
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 004ad0f4aaeb1c700800000000000000
-      internalID: 558937467450663936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_5
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 407
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4e1c0122bbfbe53a0800000000000000
-      internalID: -6674686787265183260
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_6
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 383
-        width: 48
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 195
+        y: 384
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -438,15 +372,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_7
+      name: 29
       rect:
         serializedVersion: 2
-        x: 263
-        y: 383
-        width: 41
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 259
+        y: 384
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -460,81 +394,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_8
+      name: 30
       rect:
         serializedVersion: 2
-        x: 68
-        y: 396
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1ea9f48c76d143a40800000000000000
-      internalID: 5346930989175118561
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_9
-      rect:
-        serializedVersion: 2
-        x: 174
-        y: 391
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3213ef197420e1ab0800000000000000
-      internalID: -5035584826938347229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_10
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 396
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f0300890df33453f0800000000000000
-      internalID: -913047662570241265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_11
-      rect:
-        serializedVersion: 2
-        x: 327
-        y: 383
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 323
+        y: 384
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -548,15 +416,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_12
+      name: 31
       rect:
         serializedVersion: 2
-        x: 391
-        y: 383
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 387
+        y: 384
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -570,15 +438,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_13
+      name: 25
       rect:
         serializedVersion: 2
-        x: 393
-        y: 319
-        width: 43
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 387
+        y: 320
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -592,59 +460,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_14
+      name: 32
       rect:
         serializedVersion: 2
-        x: 410
-        y: 353
-        width: 8
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba6ef3c9b108f66f0800000000000000
-      internalID: -689191361890490709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_15
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 344
-        width: 13
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61a6ae1041623d240800000000000000
-      internalID: 4815234293962533398
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_16
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 319
-        width: 35
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3
+        y: 320
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -658,15 +482,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_17
+      name: 33
       rect:
         serializedVersion: 2
-        x: 71
-        y: 319
-        width: 38
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 67
+        y: 320
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -680,15 +504,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_18
+      name: 34
       rect:
         serializedVersion: 2
-        x: 135
-        y: 319
-        width: 38
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 131
+        y: 320
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -702,15 +526,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_19
+      name: 35
       rect:
         serializedVersion: 2
-        x: 199
-        y: 319
-        width: 34
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 195
+        y: 320
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -724,15 +548,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_20
+      name: 36
       rect:
         serializedVersion: 2
-        x: 263
-        y: 319
-        width: 34
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 259
+        y: 320
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -746,15 +570,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_21
+      name: 37
       rect:
         serializedVersion: 2
-        x: 327
-        y: 319
-        width: 34
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 323
+        y: 320
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -768,15 +592,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_22
+      name: 39
       rect:
         serializedVersion: 2
-        x: 7
-        y: 255
-        width: 34
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3
+        y: 256
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -790,15 +614,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_23
+      name: 40
       rect:
         serializedVersion: 2
-        x: 75
-        y: 255
-        width: 30
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 67
+        y: 256
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -812,15 +636,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_24
+      name: 41
       rect:
         serializedVersion: 2
-        x: 135
-        y: 255
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 131
+        y: 256
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -834,15 +658,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_25
+      name: 42
       rect:
         serializedVersion: 2
-        x: 197
-        y: 255
-        width: 36
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 195
+        y: 256
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -856,15 +680,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_26
+      name: 43
       rect:
         serializedVersion: 2
         x: 259
-        y: 255
-        width: 38
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 256
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -878,15 +702,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_27
+      name: 44
       rect:
         serializedVersion: 2
         x: 323
-        y: 255
-        width: 38
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 256
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -900,15 +724,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_28
+      name: 45&47&49
       rect:
         serializedVersion: 2
-        x: 386
-        y: 255
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 387
+        y: 256
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -922,15 +746,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_29
+      name: 46
       rect:
         serializedVersion: 2
-        x: 2
-        y: 191
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3
+        y: 192
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -944,15 +768,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_30
+      name: 48
       rect:
         serializedVersion: 2
-        x: 66
-        y: 191
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 67
+        y: 192
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -966,15 +790,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_31
+      name: 50
       rect:
         serializedVersion: 2
-        x: 130
-        y: 191
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 131
+        y: 192
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -988,15 +812,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_32
+      name: 51
       rect:
         serializedVersion: 2
-        x: 194
-        y: 191
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 195
+        y: 192
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1010,15 +834,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_33
+      name: 13
       rect:
         serializedVersion: 2
-        x: 263
-        y: 191
-        width: 38
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 259
+        y: 192
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1032,15 +856,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_34
+      name: 2
       rect:
         serializedVersion: 2
-        x: 322
-        y: 191
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 323
+        y: 192
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1054,15 +878,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_35
+      name: 3
       rect:
         serializedVersion: 2
         x: 387
-        y: 191
-        width: 38
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 192
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1076,15 +900,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_36
+      name: 4
       rect:
         serializedVersion: 2
         x: 3
-        y: 127
-        width: 38
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 128
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1098,15 +922,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_37
+      name: 5
       rect:
         serializedVersion: 2
-        x: 66
-        y: 127
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 67
+        y: 128
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1120,15 +944,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_38
+      name: 6
       rect:
         serializedVersion: 2
         x: 131
-        y: 127
-        width: 38
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 128
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1142,15 +966,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_39
+      name: 7
       rect:
         serializedVersion: 2
-        x: 199
-        y: 127
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 195
+        y: 128
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1164,15 +988,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_40
+      name: 8
       rect:
         serializedVersion: 2
-        x: 263
-        y: 127
-        width: 34
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 259
+        y: 128
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1186,15 +1010,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_41
+      name: 9
       rect:
         serializedVersion: 2
-        x: 327
-        y: 127
-        width: 34
-        height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 323
+        y: 128
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1208,15 +1032,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_42
+      name: 10
       rect:
         serializedVersion: 2
-        x: 391
-        y: 127
-        width: 34
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 387
+        y: 128
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1230,15 +1054,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_43
+      name: 11
       rect:
         serializedVersion: 2
-        x: 7
-        y: 63
-        width: 34
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3
+        y: 64
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1252,15 +1076,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_44
+      name: 12
       rect:
         serializedVersion: 2
-        x: 71
-        y: 63
-        width: 34
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 67
+        y: 64
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1274,15 +1098,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_45
+      name: 1
       rect:
         serializedVersion: 2
-        x: 130
-        y: 63
-        width: 39
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 131
+        y: 64
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1296,15 +1120,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_46
+      name: 14
       rect:
         serializedVersion: 2
-        x: 199
-        y: 63
-        width: 39
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 195
+        y: 64
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1318,15 +1142,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_47
+      name: 15
       rect:
         serializedVersion: 2
-        x: 263
-        y: 63
-        width: 37
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 259
+        y: 64
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1340,15 +1164,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_48
+      name: 16
       rect:
         serializedVersion: 2
-        x: 327
-        y: 63
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 323
+        y: 64
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1362,15 +1186,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_49
+      name: 17
       rect:
         serializedVersion: 2
-        x: 391
-        y: 63
-        width: 34
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 387
+        y: 64
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1384,15 +1208,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_50
+      name: 18
       rect:
         serializedVersion: 2
-        x: 7
+        x: 3
         y: 0
-        width: 34
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1406,15 +1230,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_51
+      name: 19
       rect:
         serializedVersion: 2
-        x: 71
+        x: 67
         y: 0
-        width: 34
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1428,15 +1252,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_52
+      name: 20
       rect:
         serializedVersion: 2
-        x: 135
+        x: 131
         y: 0
-        width: 34
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1450,15 +1274,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_53
+      name: 21
       rect:
         serializedVersion: 2
-        x: 199
+        x: 195
         y: 0
-        width: 35
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1472,37 +1296,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_54
+      name: 22
       rect:
         serializedVersion: 2
-        x: 260
-        y: 12
-        width: 9
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 04885cc8c0f7f27b0800000000000000
-      internalID: -5246835348985247680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Recharge_Anim_55
-      rect:
-        serializedVersion: 2
-        x: 262
+        x: 259
         y: 0
-        width: 43
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1516,15 +1318,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_56
+      name: 23
       rect:
         serializedVersion: 2
-        x: 329
+        x: 323
         y: 0
-        width: 46
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 51
+        height: 37
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1538,15 +1340,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Recharge_Anim_57
+      name: 24
       rect:
         serializedVersion: 2
-        x: 388
+        x: 387
         y: 0
         width: 51
         height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.36, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1563,7 +1365,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5ed6ac5e5ca30e3438d2d54adcd69402
     internalID: 0
     vertices: []
     indices: 
@@ -1573,62 +1375,62 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Recharge_Anim_0: -2633892630364547239
-      Recharge_Anim_1: -8321721139514593285
+      1: -5693679541513311906
+      10: -7125310053420722167
+      11: -1966916487579595733
+      12: 4830369403560985539
+      13: 2781423498114206925
+      14: 1108303782948593445
+      15: 1314461812938494645
+      16: -879075758572063957
+      17: 7015610163090467575
+      18: 6562730922059248536
+      19: -1168231934381805468
+      2: -4163013460429438727
+      20: 160408938706697188
+      21: -645556225300302802
+      22: 9101376942348987612
+      23: -3196943193463635835
+      24: -5244178308220692183
+      25: -8084240642740395495
+      26: -8321721139514593285
+      27: -1850402101558973577
+      28: -1147329569416080478
+      29: -6737600949854108940
+      3: -8602923908824300632
+      30: -8244559055245214841
+      31: -6963554890419357424
+      32: -7461324402860222850
+      33: -7556937841261469891
+      34: -2816922603647532179
+      35: 4699925179703728906
+      36: 5048701468035823619
+      37: -2312511068217781985
+      38: -2633892630364547239
+      39: 9189082767078970523
+      4: 430860496509557487
+      40: 5158441494353304570
+      41: 6608881485680076560
+      42: -9082928685602810528
+      43: -5075706897964961738
+      44: -3995154334533789341
+      45&47&49: -6366422869828685440
+      46: 1103073899805218690
+      48: 7876896360332468826
+      5: 681951185051171692
+      50: 3274275366360312778
+      51: 4657026124390020021
+      6: -126833005717993402
+      7: -2026279655748756580
+      8: -3159346489773226498
+      9: -4683463811450451251
       Recharge_Anim_10: -913047662570241265
-      Recharge_Anim_11: -8244559055245214841
-      Recharge_Anim_12: -6963554890419357424
-      Recharge_Anim_13: -8084240642740395495
       Recharge_Anim_14: -689191361890490709
       Recharge_Anim_15: 4815234293962533398
-      Recharge_Anim_16: -7461324402860222850
-      Recharge_Anim_17: -7556937841261469891
-      Recharge_Anim_18: -2816922603647532179
-      Recharge_Anim_19: 4699925179703728906
-      Recharge_Anim_2: -1850402101558973577
-      Recharge_Anim_20: 5048701468035823619
-      Recharge_Anim_21: -2312511068217781985
-      Recharge_Anim_22: 9189082767078970523
-      Recharge_Anim_23: 5158441494353304570
-      Recharge_Anim_24: 6608881485680076560
-      Recharge_Anim_25: -9082928685602810528
-      Recharge_Anim_26: -5075706897964961738
-      Recharge_Anim_27: -3995154334533789341
-      Recharge_Anim_28: -6366422869828685440
-      Recharge_Anim_29: 1103073899805218690
       Recharge_Anim_3: 9176790818443822279
-      Recharge_Anim_30: 7876896360332468826
-      Recharge_Anim_31: 3274275366360312778
-      Recharge_Anim_32: 4657026124390020021
-      Recharge_Anim_33: 2781423498114206925
-      Recharge_Anim_34: -4163013460429438727
-      Recharge_Anim_35: -8602923908824300632
-      Recharge_Anim_36: 430860496509557487
-      Recharge_Anim_37: 681951185051171692
-      Recharge_Anim_38: -126833005717993402
-      Recharge_Anim_39: -2026279655748756580
       Recharge_Anim_4: 558937467450663936
-      Recharge_Anim_40: -3159346489773226498
-      Recharge_Anim_41: -4683463811450451251
-      Recharge_Anim_42: -7125310053420722167
-      Recharge_Anim_43: -1966916487579595733
-      Recharge_Anim_44: 4830369403560985539
-      Recharge_Anim_45: -5693679541513311906
-      Recharge_Anim_46: 1108303782948593445
-      Recharge_Anim_47: 1314461812938494645
-      Recharge_Anim_48: -879075758572063957
-      Recharge_Anim_49: 7015610163090467575
       Recharge_Anim_5: -6674686787265183260
-      Recharge_Anim_50: 6562730922059248536
-      Recharge_Anim_51: -1168231934381805468
-      Recharge_Anim_52: 160408938706697188
-      Recharge_Anim_53: -645556225300302802
       Recharge_Anim_54: -5246835348985247680
-      Recharge_Anim_55: 9101376942348987612
-      Recharge_Anim_56: -3196943193463635835
-      Recharge_Anim_57: -5244178308220692183
-      Recharge_Anim_6: -1147329569416080478
-      Recharge_Anim_7: -6737600949854108940
       Recharge_Anim_8: 5346930989175118561
       Recharge_Anim_9: -5035584826938347229
   mipmapLimitGroupName: 
