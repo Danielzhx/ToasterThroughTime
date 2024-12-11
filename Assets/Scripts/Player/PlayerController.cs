@@ -227,18 +227,35 @@ namespace TarodevController
 
         private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
         private bool CanUseCoyote => _coyoteUsable && !_grounded && _time < _frameLeftGrounded + _stats.CoyoteTime;
-
+        public bool hasToast = false;
+        
+        public float doubleJumpMultiplier = 1.5f;
         private void HandleJump()
         {
-            if (!_endedJumpEarly && !_grounded && !_frameInput.JumpHeld && _rb.linearVelocity.y > 0) _endedJumpEarly = true;
+            if (!_endedJumpEarly && !_grounded && !_frameInput.JumpHeld && _rb.linearVelocity.y > 0)
+            {
+                _endedJumpEarly = true;
+            }
 
-            if (!_jumpToConsume && !HasBufferedJump) return;
+            if (!_jumpToConsume && !HasBufferedJump)
+            {
+                return;
+            }
 
-            if (_grounded || CanUseCoyote) ExecuteJump();
+            if (_grounded || CanUseCoyote)
+            {
+                ExecuteJump();
+            }
+            //double jump
+            else if (hasToast && !_grounded)
+            {
+                // Perform Double Jump
+                Bounce(doubleJumpMultiplier);
+                hasToast = false; // Reset the hasToast flag to prevent multiple double jumps
+            }
 
             _jumpToConsume = false;
         }
-        public float bounceMultiplier = 1f;
         private bool justBounced = false;
         [SerializeField] private Collider2D feetCollider;
         public void SetJustBounced(float delay = 0.2f)
@@ -251,7 +268,8 @@ namespace TarodevController
             yield return new WaitForSeconds(delay);
             justBounced = false;
         }
-        public void Bounce()
+        
+        public void Bounce(float bounceMultiplier)
         {
             // Reset vertical velocity before applying bounce
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0);

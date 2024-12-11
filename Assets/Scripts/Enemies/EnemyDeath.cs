@@ -5,6 +5,8 @@ public class EnemyDeath : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     private Collider2D enemyCollider2D;
+    public float bounceMultiplier = 1f;
+
 
     void Start()
     {
@@ -16,11 +18,13 @@ public class EnemyDeath : MonoBehaviour
     {
         if (collision.CompareTag("PlayerFeet"))
         {
+            
             // The player hit the enemy with their feet, process bounce and defeat enemy
             PlayerController playerController = collision.GetComponentInParent<PlayerController>();
             if (playerController != null && !playerController.IsInvincible)
             {
-                playerController.Bounce(); // Uses the bounceMultiplier
+                playerController.hasToast = true;
+                playerController.Bounce(bounceMultiplier); // Uses the bounceMultiplier
                 playerController.SetJustBounced(0.2f); // Sets the flag for 0.2 seconds
                 DefeatEnemy();
             }
