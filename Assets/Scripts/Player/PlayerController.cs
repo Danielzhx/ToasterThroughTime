@@ -22,22 +22,26 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
-        //private Animator Walking_Animator;
+        private bool zapDead = false;
+        private SpriteRenderer _sr;
 
-        // Health Pool
-        public int maxHealth = 4;  // Maximum health
-        public int currentHealth;  // Current health
+        //private Animator Walking_Animator;
 
         // Invincibility settings (optional to prevent quick repeated hits)
         //private bool isInvincible = false;
         private Animator _anim;
         [SerializeField] private bool isInvincible = false;
         [SerializeField] private float invincibilityDuration = 1f;
-        public bool IsInvincible => isInvincible;
+        [SerializeField] private float bounceForce = 5f;
+        [SerializeField] private float bounceVerticalForce = 2f;
 
+        // Health Pool
+        public int maxHealth = 4;  // Maximum health
+        public int currentHealth;  // Current health
+
+        public bool IsInvincible => isInvincible;
         // Reference to the HUD Arrow script
         public Arrow healthArrow;
-
         public bool isFacingRight = true;
 
         #region Interface
@@ -59,6 +63,7 @@ namespace TarodevController
             //Walking_Animator = GetComponent<Animator>();
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
             _anim = GetComponent<Animator>();
+            _sr = GetComponent<SpriteRenderer>();
 
             // Initialize current health
             currentHealth = maxHealth;
@@ -86,23 +91,25 @@ namespace TarodevController
 
         #region Health
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Enemy") && !isInvincible)
+        private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (collision.CompareTag("Enemy") && !isInvincible)
+            {
 
-        // Spawn particle effect
-        if (damageEffectPrefab != null)
-        {
+                // Spawn particle effect
+                if (damageEffectPrefab != null)
+                {
                     Debug.Log("Particle prefab detected!");
-            Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
-        }
-        else{
-           Debug.LogError("Damage effect prefab is not assigned!");}
+                    Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    Debug.LogError("Damage effect prefab is not assigned!");
+                }
 
-            TakeDamage(1);
+                TakeDamage(1);
+            }
         }
-    }
 
         private void Update()
         {
@@ -131,8 +138,19 @@ namespace TarodevController
                 _anim.SetTrigger("Dying");
                 _rb.linearVelocity = new Vector2(0, 0);
                 this.enabled = false;
+                return;
             }
 
+
+            _anim.SetTrigger("TakeDamage");
+
+            float direction = _sr.flipX ? 1f : -1f;
+
+            // Set the frame velocity directly 
+            _frameVelocity.x = direction * bounceForce;
+            _frameVelocity.y = bounceVerticalForce;
+
+            _rb.linearVelocity = _frameVelocity;
 
             // Update health HUD arrow position
             if (healthArrow != null)
@@ -143,6 +161,7 @@ namespace TarodevController
             // Start invincibility if needed
             StartCoroutine(InvincibilityCoroutine());
         }
+
 
         // Coroutine to make the player invincible for a short period
         private IEnumerator InvincibilityCoroutine()
@@ -335,7 +354,7 @@ namespace TarodevController
         //     if (direction > 0 && scale.x < 0 || direction < 0 && scale.x > 0)
         //     {
         //         scale.x *= -1; // Flip the x-scale
-        //         transform.localScale = scale;
+        //         <transfor>m.localScale = scale;
         //         // if flipped while facing right, face left and vice versa.
         //         if (isFacingRight){isFacingRight = false;}
         //         else {isFacingRight = true;}

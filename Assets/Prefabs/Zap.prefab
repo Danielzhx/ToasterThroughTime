@@ -172,15 +172,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 0b1d3b9fd178f5f43b4a224a20819382, type: 2}
-  maxHealth: 4
-  currentHealth: 0
   isInvincible: 0
   invincibilityDuration: 1
+  bounceForce: 30
+  bounceVerticalForce: 20
+  maxHealth: 4
+  currentHealth: 0
   healthArrow: {fileID: 0}
   isFacingRight: 1
+  damageEffectPrefab: {fileID: 341816233389350412, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
   hasToast: 0
   doubleJumpMultiplier: 1.5
-  feetCollider: {fileID: 0}
 --- !u!114 &498741902525276008
 MonoBehaviour:
   m_ObjectHideFlags: 0
