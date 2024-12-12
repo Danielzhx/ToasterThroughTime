@@ -14,43 +14,50 @@ public class EnemyController : MonoBehaviour
         enemyCollider2D = GetComponent<Collider2D>();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+   void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("PlayerFeet"))
+        if (collision.gameObject.CompareTag("Player"))
         {
-            
-            // The player hit the enemy with their feet, process bounce and defeat enemy
-            PlayerController playerController = collision.GetComponentInParent<PlayerController>();
-            if (playerController != null && !playerController.IsInvincible)
+            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            if (player == null) return;
+
+            bool stomped = false;
+            foreach (ContactPoint2D contact in collision.contacts)
             {
-                playerController.hasToast = true;
-                playerController.Bounce(bounceMultiplier); // Uses the bounceMultiplier
-                playerController.SetJustBounced(0.2f); // Sets the flag for 0.2 seconds
-                DefeatEnemy();
+                if (contact.normal.y < -0.5f) {
+                stomped = true;
+                break;
+            }
             }
 
-            return;
-        }
-        else if (collision.CompareTag("Player"))
-        {
-            // The player collided with the enemy from the side or below
-            PlayerController playerController = collision.GetComponent<PlayerController>();
-            if (playerController != null)
+            if (stomped)
             {
-                if (!playerController.IsInvincible)
+                // Player landed on top
+                player.hasToast = true;
+                player.Bounce(bounceMultiplier);
+                DefeatEnemy();
+            }
+            else
+            {
+                // Player hit from side or below
+                if (!player.IsInvincible)
                 {
-                    playerController.TakeDamage(1);
+                    player.TakeDamage(1);
                 }
             }
         }
-        else if (collision.CompareTag("Bullet"))
-        {
-            // Projectile hit the enemy
+        
+    }
+    void OnTriggerEnter2D(Collider2D collision){
+        if (collision.gameObject.CompareTag("Bullet")) {
             DefeatEnemy();
-            // Destroy the projectile to prevent multiple hits
             Destroy(collision.gameObject);
         }
     }
+    
+
+
+
 
     private void DefeatEnemy()
     {

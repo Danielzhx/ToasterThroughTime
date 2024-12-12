@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 4986472031733303808}
   - component: {fileID: 6295310736916430822}
   - component: {fileID: 2224137923747643800}
+  - component: {fileID: 3642809719144569108}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -278,6 +279,7 @@ MonoBehaviour:
   - {fileID: 1973822234851437455}
   moveSpeed: 2
   patrolDestination: 1
+
 --- !u!114 &6295310736916430822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bounceMultiplier: 1
 --- !u!114 &2224137923747643800
+
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

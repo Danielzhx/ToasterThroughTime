@@ -25,6 +25,8 @@ namespace TarodevController
         private bool zapDead = false;
         private SpriteRenderer _sr;
 
+        //private Animator Walking_Animator;
+
         // Invincibility settings (optional to prevent quick repeated hits)
         //private bool isInvincible = false;
         private Animator _anim;
@@ -50,6 +52,9 @@ namespace TarodevController
 
         #endregion
         private float _time;
+
+        public GameObject damageEffectPrefab; // Particle damage effect
+
 
         private void Awake()
         {
@@ -88,9 +93,20 @@ namespace TarodevController
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            // Check if the player collides with an enemy
-            if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
+            if (collision.CompareTag("Enemy") && !isInvincible)
             {
+
+                // Spawn particle effect
+                if (damageEffectPrefab != null)
+                {
+                    Debug.Log("Particle prefab detected!");
+                    Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    Debug.LogError("Damage effect prefab is not assigned!");
+                }
+
                 TakeDamage(1);
             }
         }
@@ -119,11 +135,7 @@ namespace TarodevController
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                if (!zapDead)
-                {
-                    _anim.SetTrigger("Dying");
-                    zapDead = true;
-                }
+                _anim.SetTrigger("Dying");
                 _rb.linearVelocity = new Vector2(0, 0);
                 this.enabled = false;
                 return;
@@ -286,18 +298,6 @@ namespace TarodevController
             }
 
             _jumpToConsume = false;
-        }
-        private bool justBounced = false;
-        [SerializeField] private Collider2D feetCollider;
-        public void SetJustBounced(float delay = 0.2f)
-        {
-            justBounced = true;
-            StartCoroutine(ResetJustBounced(delay));
-        }
-        private IEnumerator ResetJustBounced(float delay)
-        {
-            yield return new WaitForSeconds(delay);
-            justBounced = false;
         }
 
         public void Bounce(float bounceMultiplier)
