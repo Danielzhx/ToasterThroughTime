@@ -88,7 +88,6 @@ namespace TarodevController
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Collision detected with: " + collision.name);
         if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
         {
 
@@ -216,15 +215,6 @@ namespace TarodevController
             RaycastHit2D groundHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.down, _stats.GrounderDistance, _stats.GroundLayer);
             RaycastHit2D ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.up, _stats.GrounderDistance, _stats.GroundLayer);
 
-        // Debugging
-        if (groundHit.collider != null)
-        {
-            Debug.Log("Ground Detected on Layer: " + LayerMask.LayerToName(groundHit.collider.gameObject.layer));
-        }
-        else
-        {
-            Debug.Log("Ground not detected.");
-        }
             // Hit a Ceiling
             if (ceilingHit) _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
 
@@ -291,7 +281,6 @@ namespace TarodevController
             _jumpToConsume = false;
         }
         private bool justBounced = false;
-        [SerializeField] private Collider2D feetCollider;
         public void SetJustBounced(float delay = 0.2f)
         {
             justBounced = true;
