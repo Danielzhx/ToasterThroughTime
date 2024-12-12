@@ -168,4 +168,3 @@ MonoBehaviour:
   lifespan: 3
   ProjectileSpeed: 20
   zap: {fileID: 0}
-  playerController: {fileID: 0}
