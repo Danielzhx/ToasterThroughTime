@@ -49,6 +49,9 @@ namespace TarodevController
         #endregion
         private float _time;
 
+        public GameObject damageEffectPrefab; // Particle damage effect
+
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
@@ -68,17 +71,39 @@ namespace TarodevController
 
         }
 
+        void enableController()
+        {
+            _rb.bodyType = RigidbodyType2D.Dynamic;
+            this.enabled = true;
+        }
+
+        void disableController()
+        {
+            _rb.bodyType = RigidbodyType2D.Kinematic;
+            _rb.linearVelocity = Vector2.zero;
+            this.enabled = false;
+        }
 
         #region Health
 
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Collision detected with: " + collision.name);
+        if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
         {
-            // Check if the player collides with an enemy
-            if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
-            {
-                TakeDamage(1);
-            }
+
+        // Spawn particle effect
+        if (damageEffectPrefab != null)
+        {
+                    Debug.Log("Particle prefab detected!");
+            Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
         }
+        else{
+           Debug.LogError("Damage effect prefab is not assigned!");}
+
+            TakeDamage(1);
+        }
+    }
 
         private void Update()
         {
@@ -188,8 +213,8 @@ namespace TarodevController
             Physics2D.queriesStartInColliders = false;
 
             // Ground and Ceiling
-        RaycastHit2D groundHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.down, _stats.GrounderDistance, _stats.GroundLayer);
-        RaycastHit2D ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.up, _stats.GrounderDistance, _stats.GroundLayer);
+            RaycastHit2D groundHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.down, _stats.GrounderDistance, _stats.GroundLayer);
+            RaycastHit2D ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.up, _stats.GrounderDistance, _stats.GroundLayer);
 
         // Debugging
         if (groundHit.collider != null)
@@ -237,7 +262,7 @@ namespace TarodevController
         private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
         private bool CanUseCoyote => _coyoteUsable && !_grounded && _time < _frameLeftGrounded + _stats.CoyoteTime;
         public bool hasToast = false;
-        
+
         public float doubleJumpMultiplier = 1.5f;
         private void HandleJump()
         {
@@ -277,7 +302,7 @@ namespace TarodevController
             yield return new WaitForSeconds(delay);
             justBounced = false;
         }
-        
+
         public void Bounce(float bounceMultiplier)
         {
             // Reset vertical velocity before applying bounce

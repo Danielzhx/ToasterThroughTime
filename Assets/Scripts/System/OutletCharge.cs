@@ -1,6 +1,4 @@
 using UnityEngine;
-using TarodevController;
-using Unity.VisualScripting;
 
 public class OutletCharge : MonoBehaviour
 {
