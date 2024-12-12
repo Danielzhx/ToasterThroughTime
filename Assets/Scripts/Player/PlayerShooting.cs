@@ -64,4 +64,9 @@ public class PlayerShooting : MonoBehaviour
             return;
         }
     }
+
+    void disableShooting()
+    {
+        this.enabled = false;
+    }
 }

@@ -6778,6 +6778,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6460421596110509054, guid: 3a744d528b9d78b4e98e7fccbd94b661, type: 3}
   m_PrefabInstance: {fileID: 1072619893}
   m_PrefabAsset: {fileID: 0}
+--- !u!61 &1210181408 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 9055497014175164054, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+  m_PrefabInstance: {fileID: 7884605605388044452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1218368706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11501,6 +11506,10 @@ PrefabInstance:
       propertyPath: healthArrow
       value: 
       objectReference: {fileID: 177431320}
+    - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+      propertyPath: feetCollider
+      value: 
+      objectReference: {fileID: 1210181408}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
