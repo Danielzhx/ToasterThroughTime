@@ -50,6 +50,9 @@ namespace TarodevController
         #endregion
         private float _time;
 
+        public GameObject damageEffectPrefab; // Particle damage effect
+
+
         private void Awake()
         {
             _rb = GetComponent<Rigidbody2D>();
@@ -81,14 +84,24 @@ namespace TarodevController
 
         #region Health
 
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Collision detected with: " + collision.name);
+        if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
         {
-            // Check if the player collides with an enemy
-            if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
-            {
-                TakeDamage(1);
-            }
+
+        // Spawn particle effect
+        if (damageEffectPrefab != null)
+        {
+                    Debug.Log("Particle prefab detected!");
+            Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
         }
+        else{
+           Debug.LogError("Damage effect prefab is not assigned!");}
+
+            TakeDamage(1);
+        }
+    }
 
         private void Update()
         {
