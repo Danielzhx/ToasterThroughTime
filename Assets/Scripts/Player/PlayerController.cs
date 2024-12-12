@@ -88,7 +88,7 @@ namespace TarodevController
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
+        if (collision.CompareTag("Enemy") && !isInvincible)
         {
 
         // Spawn particle effect
@@ -279,17 +279,6 @@ namespace TarodevController
             }
 
             _jumpToConsume = false;
-        }
-        private bool justBounced = false;
-        public void SetJustBounced(float delay = 0.2f)
-        {
-            justBounced = true;
-            StartCoroutine(ResetJustBounced(delay));
-        }
-        private IEnumerator ResetJustBounced(float delay)
-        {
-            yield return new WaitForSeconds(delay);
-            justBounced = false;
         }
 
         public void Bounce(float bounceMultiplier)

@@ -46,10 +46,15 @@ public class EnemyController : MonoBehaviour
                 }
             }
         }
+        
+    }
+    void OnTriggerEnter2D(Collider2D collision){
         if (collision.gameObject.CompareTag("Bullet")) {
-        DefeatEnemy();
+            DefeatEnemy();
+            Destroy(collision.gameObject);
+        }
     }
-    }
+    
 
 
 
