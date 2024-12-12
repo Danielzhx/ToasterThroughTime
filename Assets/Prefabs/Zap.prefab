@@ -180,9 +180,9 @@ MonoBehaviour:
   currentHealth: 0
   healthArrow: {fileID: 0}
   isFacingRight: 1
+  damageEffectPrefab: {fileID: 341816233389350412, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
   hasToast: 0
   doubleJumpMultiplier: 1.5
-  feetCollider: {fileID: 9055497014175164054}
 --- !u!114 &498741902525276008
 MonoBehaviour:
   m_ObjectHideFlags: 0
