@@ -18,18 +18,14 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.CompareTag("PlayerFeet"))
         {
-            
-            // The player hit the enemy with their feet, process bounce and defeat enemy
-            PlayerController playerController = collision.GetComponentInParent<PlayerController>();
-            if (playerController != null && !playerController.IsInvincible)
+            // Ensure the collision is from above
+            PlayerController player = collision.GetComponentInParent<PlayerController>();
+            if (player != null && player.transform.position.y > transform.position.y)
             {
-                playerController.hasToast = true;
-                playerController.Bounce(bounceMultiplier); // Uses the bounceMultiplier
-                playerController.SetJustBounced(0.2f); // Sets the flag for 0.2 seconds
+                player.hasToast = true;
+                player.Bounce(bounceMultiplier);
                 DefeatEnemy();
             }
-
-            return;
         }
         else if (collision.CompareTag("Player"))
         {

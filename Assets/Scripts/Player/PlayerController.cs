@@ -22,7 +22,6 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
-        private bool zapDead = false;
         //private Animator Walking_Animator;
 
         // Health Pool
@@ -69,15 +68,6 @@ namespace TarodevController
 
         }
 
-        void enableController()
-        {
-            this.enabled = true;
-        }
-
-        void disableController()
-        {
-            this.enabled = false;
-        }
 
         #region Health
 
@@ -114,11 +104,7 @@ namespace TarodevController
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                if (!zapDead)
-                {
-                    _anim.SetTrigger("Dying");
-                    zapDead = true;
-                }
+                _anim.SetTrigger("Dying");
                 _rb.linearVelocity = new Vector2(0, 0);
                 this.enabled = false;
             }
@@ -205,6 +191,15 @@ namespace TarodevController
         RaycastHit2D groundHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.down, _stats.GrounderDistance, _stats.GroundLayer);
         RaycastHit2D ceilingHit = Physics2D.CapsuleCast(_col.bounds.center, _col.bounds.size, _col.direction, 0, Vector2.up, _stats.GrounderDistance, _stats.GroundLayer);
 
+        // Debugging
+        if (groundHit.collider != null)
+        {
+            Debug.Log("Ground Detected on Layer: " + LayerMask.LayerToName(groundHit.collider.gameObject.layer));
+        }
+        else
+        {
+            Debug.Log("Ground not detected.");
+        }
             // Hit a Ceiling
             if (ceilingHit) _frameVelocity.y = Mathf.Min(0, _frameVelocity.y);
 
