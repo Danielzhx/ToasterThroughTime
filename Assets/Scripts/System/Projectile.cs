@@ -1,16 +1,14 @@
-using TarodevController;
 using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
   public float lifespan = 2f;
-  private float starttime;
   public float ProjectileSpeed = 5;
   public SpriteRenderer zap;
 
+  private float starttime;
   private Vector2 projectileDirection;
   private Rigidbody2D ProjectileBody;
-  public PlayerController playerController;
 
 
 
