@@ -22,7 +22,6 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
-        private bool zapDead = false;
         private SpriteRenderer _sr;
 
         //private Animator Walking_Animator;
@@ -52,8 +51,6 @@ namespace TarodevController
 
         #endregion
         private float _time;
-
-        public GameObject damageEffectPrefab; // Particle damage effect
 
 
         private void Awake()
@@ -91,25 +88,6 @@ namespace TarodevController
 
         #region Health
 
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.CompareTag("Enemy") && !isInvincible)
-            {
-
-                // Spawn particle effect
-                if (damageEffectPrefab != null)
-                {
-                    Debug.Log("Particle prefab detected!");
-                    Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
-                }
-                else
-                {
-                    Debug.LogError("Damage effect prefab is not assigned!");
-                }
-
-                TakeDamage(1);
-            }
-        }
 
         private void Update()
         {
