@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using System.Collections;
 using Unity.Cinemachine;
+using AudioManger;
 
 
 namespace TarodevController
@@ -129,6 +130,7 @@ namespace TarodevController
         public GameObject damageEffectPrefab;
         public void TakeDamage(int damageAmount)
         {
+            AudioManager.instance.PlayCharacterDamagedSound();
             Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
             // Reduce current health by the damage amount
             currentHealth -= damageAmount;
