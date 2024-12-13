@@ -41,6 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 3998243107
+    locked: 0
+  - name: Moon
+    uniqueID: 851352627
+    locked: 0
+  - name: BackgroundProps
+    uniqueID: 3941623593
+    locked: 0
+  - name: Ground
+    uniqueID: 4122069235
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
