@@ -11400,6 +11400,10 @@ PrefabInstance:
       propertyPath: damageEffectPrefab
       value: 
       objectReference: {fileID: 341816233389350412, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
+    - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+      propertyPath: downwardProjectilePrefab
+      value: 
+      objectReference: {fileID: 6092000161487331442, guid: d91686f98bc0dcd48b460a161179fb85, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8522643639703871083, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
