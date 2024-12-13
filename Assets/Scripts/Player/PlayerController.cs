@@ -104,8 +104,10 @@ namespace TarodevController
 
 
         // Method to handle taking damage
+        public GameObject damageEffectPrefab;
         public void TakeDamage(int damageAmount)
         {
+            Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
             // Reduce current health by the damage amount
             currentHealth -= damageAmount;
 
