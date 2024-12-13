@@ -251,6 +251,7 @@ namespace TarodevController
         public bool hasToast = false;
 
         public float doubleJumpMultiplier = 1.5f;
+        public GameObject downwardProjectilePrefab;
         private void HandleJump()
         {
             if (!_endedJumpEarly && !_grounded && !_frameInput.JumpHeld && _rb.linearVelocity.y > 0)
@@ -268,11 +269,17 @@ namespace TarodevController
                 ExecuteJump();
             }
             //double jump
-            else if (hasToast && !_grounded)
-            {
+            else if (hasToast && !_grounded) {
                 // Perform Double Jump
                 Bounce(doubleJumpMultiplier);
-                hasToast = false; // Reset the hasToast flag to prevent multiple double jumps
+
+                // ADD: Instantiate downward projectile
+                if (downwardProjectilePrefab != null) {
+                    Instantiate(downwardProjectilePrefab, transform.position, Quaternion.identity);
+                }
+
+                // Prevent multiple double jumps
+                hasToast = false;
             }
 
             _jumpToConsume = false;
