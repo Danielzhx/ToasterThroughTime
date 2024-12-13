@@ -81,8 +81,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2083009907
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: -3839626377653014811, guid: 1865477794351ec4bbbe2d3321c0b134, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -172,15 +172,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _stats: {fileID: 11400000, guid: 0b1d3b9fd178f5f43b4a224a20819382, type: 2}
-  maxHealth: 4
-  currentHealth: 0
   isInvincible: 0
   invincibilityDuration: 1
+  bounceForce: 30
+  bounceVerticalForce: 20
+  maxHealth: 4
+  currentHealth: 0
   healthArrow: {fileID: 0}
   isFacingRight: 1
+  damageEffectPrefab: {fileID: 341816233389350412, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
   hasToast: 0
   doubleJumpMultiplier: 1.5
-  feetCollider: {fileID: 0}
+  downwardProjectilePrefab: {fileID: 0}
 --- !u!114 &498741902525276008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,8 +300,8 @@ Transform:
   m_GameObject: {fileID: 8522643639703871083}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.018, y: -0.095, z: 0}
-  m_LocalScale: {x: 0.064500004, y: 0.06059, z: 0.1}
+  m_LocalPosition: {x: 0.05, y: -0.095, z: 0}
+  m_LocalScale: {x: 0.112722985, y: 0.0678608, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5453125301331248497}

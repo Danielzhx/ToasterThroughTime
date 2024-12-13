@@ -140,12 +140,12 @@ TextureImporter:
       name: Bread_Shot_Anim_0
       rect:
         serializedVersion: 2
-        x: 9
-        y: 89
-        width: 36
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7
+        y: 90
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Bread_Shot_Anim_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 89
-        width: 35
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 52
+        y: 90
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,12 +184,12 @@ TextureImporter:
       name: Bread_Shot_Anim_2
       rect:
         serializedVersion: 2
-        x: 99
-        y: 89
-        width: 35
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 98
+        y: 90
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -203,37 +203,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bread_Shot_Anim_3
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 54
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ee71bb801a5d45e70800000000000000
-      internalID: 9103135634435545070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Bread_Shot_Anim_4
       rect:
         serializedVersion: 2
-        x: 8
-        y: 44
-        width: 36
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 7
+        y: 45
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,12 +228,12 @@ TextureImporter:
       name: Bread_Shot_Anim_5
       rect:
         serializedVersion: 2
-        x: 55
+        x: 52
         y: 44
-        width: 34
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,12 +250,12 @@ TextureImporter:
       name: Bread_Shot_Anim_6
       rect:
         serializedVersion: 2
-        x: 100
+        x: 98
         y: 44
-        width: 34
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,12 +272,12 @@ TextureImporter:
       name: Bread_Shot_Anim_7
       rect:
         serializedVersion: 2
-        x: 9
+        x: 7
         y: 0
-        width: 36
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 37
+        height: 38
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,12 +294,12 @@ TextureImporter:
       name: Bread_Shot_Anim_8
       rect:
         serializedVersion: 2
-        x: 54
+        x: 52
         y: 0
-        width: 36
+        width: 37
         height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5196108, y: 0.2694168}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,7 +316,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 64122b56edb000447a1719009651955f
     internalID: 0
     vertices: []
     indices: 

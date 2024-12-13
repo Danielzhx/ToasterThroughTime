@@ -1,11 +1,11 @@
 using UnityEngine;
+using AudioManger;
 
 public class CoinsController : MonoBehaviour
 {
     [Header("Floating Settings")]
     public float floatAmplitude = 0.5f; // How far the coin floats up and down
     public float floatFrequency = 1f; // How fast the coin floats
-    public AudioClip collectSound;
     private Vector3 _startPosition;
 
     private void Start()
@@ -28,7 +28,7 @@ public class CoinsController : MonoBehaviour
         {
 
             //Plays the udio of collecting the audio
-            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+            AudioManager.instance.PlayCoinSound();
             ToastCoinsManager.instance.score += 1;
             // Destroy the coin object
             Destroy(gameObject);

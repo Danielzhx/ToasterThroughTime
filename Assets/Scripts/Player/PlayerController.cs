@@ -22,23 +22,28 @@ namespace TarodevController
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
-        private bool zapDead = false;
-        //private Animator Walking_Animator;
+        private SpriteRenderer _sr;
 
-        // Health Pool
-        public int maxHealth = 4;  // Maximum health
-        public int currentHealth;  // Current health
+        //private Animator Walking_Animator;
 
         // Invincibility settings (optional to prevent quick repeated hits)
         //private bool isInvincible = false;
         private Animator _anim;
         [SerializeField] private bool isInvincible = false;
         [SerializeField] private float invincibilityDuration = 1f;
-        public bool IsInvincible => isInvincible;
+        [SerializeField] private float bounceForce = 5f;
+        [SerializeField] private float bounceVerticalForce = 2f;
+        [SerializeField] private float idleThreshold = 5f;
+        private float _idleTimer = 0f;
 
+
+        // Health Pool
+        public int maxHealth = 4;  // Maximum health
+        public int currentHealth;  // Current health
+
+        public bool IsInvincible => isInvincible;
         // Reference to the HUD Arrow script
         public Arrow healthArrow;
-
         public bool isFacingRight = true;
 
         #region Interface
@@ -50,8 +55,6 @@ namespace TarodevController
         #endregion
         private float _time;
 
-        public GameObject damageEffectPrefab; // Particle damage effect
-
 
         private void Awake()
         {
@@ -60,6 +63,7 @@ namespace TarodevController
             //Walking_Animator = GetComponent<Animator>();
             _cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
             _anim = GetComponent<Animator>();
+            _sr = GetComponent<SpriteRenderer>();
 
             // Initialize current health
             currentHealth = maxHealth;
@@ -87,24 +91,6 @@ namespace TarodevController
 
         #region Health
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Collision detected with: " + collision.name);
-        if (collision.CompareTag("Enemy") && !isInvincible && !justBounced)
-        {
-
-        // Spawn particle effect
-        if (damageEffectPrefab != null)
-        {
-                    Debug.Log("Particle prefab detected!");
-            Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
-        }
-        else{
-           Debug.LogError("Damage effect prefab is not assigned!");}
-
-            TakeDamage(1);
-        }
-    }
 
         private void Update()
         {
@@ -117,12 +103,33 @@ namespace TarodevController
             //    Die();
             //}
 
+            bool isStandingStill = _grounded
+                       && Mathf.Abs(_frameInput.Move.x) < 0.01f
+                       && Mathf.Abs(_frameInput.Move.y) < 0.01f;
+
+            if (isStandingStill)
+            {
+                _idleTimer += Time.deltaTime;
+            }
+            else
+            {
+                _idleTimer = 0f;
+            }
+
+            if (_idleTimer >= idleThreshold)
+            {
+                _anim.SetTrigger("Bored");
+                _idleTimer = 0f;  // Reset timer so it doesn’t keep triggering repeatedly
+            }
+
         }
 
 
         // Method to handle taking damage
+        public GameObject damageEffectPrefab;
         public void TakeDamage(int damageAmount)
         {
+            Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
             // Reduce current health by the damage amount
             currentHealth -= damageAmount;
 
@@ -130,15 +137,22 @@ namespace TarodevController
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
-                if (!zapDead)
-                {
-                    _anim.SetTrigger("Dying");
-                    zapDead = true;
-                }
+                _anim.SetTrigger("Dying");
                 _rb.linearVelocity = new Vector2(0, 0);
                 this.enabled = false;
+                return;
             }
 
+
+            _anim.SetTrigger("TakeDamage");
+
+            float direction = _sr.flipX ? 1f : -1f;
+
+            // Set the frame velocity directly 
+            _frameVelocity.x = direction * bounceForce;
+            _frameVelocity.y = bounceVerticalForce;
+
+            _rb.linearVelocity = _frameVelocity;
 
             // Update health HUD arrow position
             if (healthArrow != null)
@@ -149,6 +163,7 @@ namespace TarodevController
             // Start invincibility if needed
             StartCoroutine(InvincibilityCoroutine());
         }
+
 
         // Coroutine to make the player invincible for a short period
         private IEnumerator InvincibilityCoroutine()
@@ -260,6 +275,7 @@ namespace TarodevController
         public bool hasToast = false;
 
         public float doubleJumpMultiplier = 1.5f;
+        public GameObject downwardProjectilePrefab;
         private void HandleJump()
         {
             if (!_endedJumpEarly && !_grounded && !_frameInput.JumpHeld && _rb.linearVelocity.y > 0)
@@ -281,22 +297,19 @@ namespace TarodevController
             {
                 // Perform Double Jump
                 Bounce(doubleJumpMultiplier);
-                hasToast = false; // Reset the hasToast flag to prevent multiple double jumps
+                _anim.SetTrigger("DoubleJump");
+
+                // ADD: Instantiate downward projectile
+                if (downwardProjectilePrefab != null)
+                {
+                    Instantiate(downwardProjectilePrefab, transform.position, Quaternion.identity);
+                }
+
+                // Prevent multiple double jumps
+                hasToast = false;
             }
 
             _jumpToConsume = false;
-        }
-        private bool justBounced = false;
-        [SerializeField] private Collider2D feetCollider;
-        public void SetJustBounced(float delay = 0.2f)
-        {
-            justBounced = true;
-            StartCoroutine(ResetJustBounced(delay));
-        }
-        private IEnumerator ResetJustBounced(float delay)
-        {
-            yield return new WaitForSeconds(delay);
-            justBounced = false;
         }
 
         public void Bounce(float bounceMultiplier)
@@ -353,7 +366,7 @@ namespace TarodevController
         //     if (direction > 0 && scale.x < 0 || direction < 0 && scale.x > 0)
         //     {
         //         scale.x *= -1; // Flip the x-scale
-        //         transform.localScale = scale;
+        //         <transfor>m.localScale = scale;
         //         // if flipped while facing right, face left and vice versa.
         //         if (isFacingRight){isFacingRight = false;}
         //         else {isFacingRight = true;}
