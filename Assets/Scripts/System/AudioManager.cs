@@ -25,12 +25,12 @@ namespace AudioManger
 
         public void PlayEnemyDeathSound()
             {
-            audioSource.PlayOneShot(enemyDeathSound, 0.5f); // Adjust volume as needed
+            audioSource.PlayOneShot(enemyDeathSound, 0.5f); 
          }
 
         public void PlayCharacterDamagedSound()
         {
-            audioSource.PlayOneShot(zapDamagedSound, 0.5f); // Adjust volume as needed
+            audioSource.PlayOneShot(zapDamagedSound, 0.5f); 
          }
 
         // Play the level 1 track and loop it
