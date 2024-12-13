@@ -143,12 +143,12 @@ TextureImporter:
       name: Idle_Anim_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 89
-        width: 35
-        height: 22
+        x: 9
+        y: 90
+        width: 37
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: Idle_Anim_1
       rect:
         serializedVersion: 2
-        x: 55
-        y: 89
-        width: 35
-        height: 24
+        x: 54
+        y: 90
+        width: 37
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: Idle_Anim_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 89
-        width: 35
+        x: 98
+        y: 90
+        width: 37
         height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5250325, y: 0.476844}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: Idle_Anim_3
       rect:
         serializedVersion: 2
-        x: 145
-        y: 89
-        width: 35
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 143
+        y: 90
+        width: 37
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5250325, y: 0.476844}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Idle_Anim_4
       rect:
         serializedVersion: 2
-        x: 10
-        y: 44
-        width: 35
-        height: 22
+        x: 9
+        y: 45
+        width: 37
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: Idle_Anim_5
       rect:
         serializedVersion: 2
-        x: 55
-        y: 44
-        width: 35
-        height: 22
+        x: 54
+        y: 45
+        width: 37
+        height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: Idle_Anim_6
       rect:
         serializedVersion: 2
-        x: 97
-        y: 44
-        width: 38
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 98
+        y: 45
+        width: 37
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5250325, y: 0.476844}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -297,12 +297,12 @@ TextureImporter:
       name: Idle_Anim_7
       rect:
         serializedVersion: 2
-        x: 142
-        y: 44
-        width: 38
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 143
+        y: 45
+        width: 37
+        height: 21
+      alignment: 9
+      pivot: {x: 0.5250325, y: 0.476844}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: Idle_Anim_8
       rect:
         serializedVersion: 2
-        x: 8
+        x: 9
         y: 0
         width: 37
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -341,12 +341,12 @@ TextureImporter:
       name: Idle_Anim_9
       rect:
         serializedVersion: 2
-        x: 55
+        x: 54
         y: 0
-        width: 35
+        width: 37
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -363,7 +363,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c589cf7b55700854fb5bcdab2e48e63c
     internalID: 0
     vertices: []
     indices: 

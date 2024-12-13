@@ -269,12 +269,15 @@ namespace TarodevController
                 ExecuteJump();
             }
             //double jump
-            else if (hasToast && !_grounded) {
+            else if (hasToast && !_grounded)
+            {
                 // Perform Double Jump
                 Bounce(doubleJumpMultiplier);
+                _anim.SetTrigger("DoubleJump");
 
                 // ADD: Instantiate downward projectile
-                if (downwardProjectilePrefab != null) {
+                if (downwardProjectilePrefab != null)
+                {
                     Instantiate(downwardProjectilePrefab, transform.position, Quaternion.identity);
                 }
 
