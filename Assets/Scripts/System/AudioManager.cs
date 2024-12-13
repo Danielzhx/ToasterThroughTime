@@ -16,7 +16,7 @@ namespace AudioManger
 
         public void PlayCoinSound()
         {
-            audioSource.PlayOneShot(coinSound);
+            audioSource.PlayOneShot(coinSound, 0.15f);
         }
     }
 }
