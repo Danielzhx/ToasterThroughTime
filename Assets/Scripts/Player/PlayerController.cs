@@ -33,6 +33,9 @@ namespace TarodevController
         [SerializeField] private float invincibilityDuration = 1f;
         [SerializeField] private float bounceForce = 5f;
         [SerializeField] private float bounceVerticalForce = 2f;
+        [SerializeField] private float idleThreshold = 5f;
+        private float _idleTimer = 0f;
+
 
         // Health Pool
         public int maxHealth = 4;  // Maximum health
@@ -99,6 +102,25 @@ namespace TarodevController
             //{
             //    Die();
             //}
+
+            bool isStandingStill = _grounded
+                       && Mathf.Abs(_frameInput.Move.x) < 0.01f
+                       && Mathf.Abs(_frameInput.Move.y) < 0.01f;
+
+            if (isStandingStill)
+            {
+                _idleTimer += Time.deltaTime;
+            }
+            else
+            {
+                _idleTimer = 0f;
+            }
+
+            if (_idleTimer >= idleThreshold)
+            {
+                _anim.SetTrigger("Bored");
+                _idleTimer = 0f;  // Reset timer so it doesn’t keep triggering repeatedly
+            }
 
         }
 

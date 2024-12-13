@@ -108,8 +108,8 @@ GameObject:
   - component: {fileID: 3946590330312414950}
   - component: {fileID: 6527554419447362096}
   - component: {fileID: 7618987495938231157}
-  - component: {fileID: 4986472031733303808}
   - component: {fileID: 1849259395703807464}
+  - component: {fileID: 294893118555081610}
   m_Layer: 0
   m_Name: Enemy1
   m_TagString: Enemy
@@ -260,23 +260,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &4986472031733303808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8562280335754863218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cb6a4e6ed043654aad23a1c769160fc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 5810153136103535525}
-  - {fileID: 1973822234851437455}
-  moveSpeed: 2
-  patrolDestination: 1
 --- !u!114 &1849259395703807464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -289,5 +272,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ae17469eea1ec4f841f7fcd89416c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolPoints:
+  - {fileID: 5810153136103535525}
+  - {fileID: 1973822234851437455}
+  moveSpeed: 2
+  patrolDestination: 1
   bounceMultiplier: 1
   damageEffectPrefab: {fileID: 341816233389350412, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
+--- !u!95 &294893118555081610
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8562280335754863218}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d8fad4854d3adfd4b9ee6934227f0f72, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
