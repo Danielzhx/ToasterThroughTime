@@ -49,7 +49,7 @@ public class EnemyController : MonoBehaviour
         
     }
     void OnTriggerEnter2D(Collider2D collision){
-        if (collision.gameObject.CompareTag("Bullet")) {
+        if (collision.gameObject.CompareTag("")) {
             DefeatEnemy();
             Destroy(collision.gameObject);
         }
