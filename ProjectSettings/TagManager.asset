@@ -47,14 +47,23 @@ TagManager:
   - name: Moon
     uniqueID: 851352627
     locked: 0
+  - name: BackgroundTiles
+    uniqueID: 475872475
+    locked: 0
   - name: BackgroundProps
     uniqueID: 3941623593
+    locked: 0
+  - name: Wall
+    uniqueID: 2271064229
     locked: 0
   - name: Ground
     uniqueID: 4122069235
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Void
+    uniqueID: 3612537041
     locked: 0
   m_RenderingLayers:
   - Default

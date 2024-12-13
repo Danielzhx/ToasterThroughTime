@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5036680906922261674}
   - component: {fileID: 729316908748547628}
   - component: {fileID: 2323704351983546058}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: MossPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,9 +26,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161170010282150371}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.15, y: -3.94, z: 0}
-  m_LocalScale: {x: 7.4441643, y: 5.7714543, z: 1}
+  m_LocalScale: {x: 1.7392057, y: 2.3563092, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
