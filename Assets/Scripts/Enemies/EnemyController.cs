@@ -8,9 +8,9 @@ public class EnemyController : MonoBehaviour
     private Collider2D enemyCollider2D;
     private Animator _anim;
     private SpriteRenderer enemyRenderer;
-    private bool isCollected = false;
+    private ToastLootController toastLootController;
 
-
+    public GameObject toastLoot;
     public Transform[] patrolPoints;
     public float moveSpeed;
     public int patrolDestination;
@@ -22,6 +22,7 @@ public class EnemyController : MonoBehaviour
         enemyCollider2D = GetComponent<Collider2D>();
         _anim = GetComponent<Animator>();
         enemyRenderer = GetComponent<SpriteRenderer>();
+        toastLootController = toastLoot.GetComponent<ToastLootController>();
     }
 
     void Update()
@@ -70,7 +71,6 @@ public class EnemyController : MonoBehaviour
             {
 
                 // Player landed on top
-                player.hasToast = true;
                 player.Bounce(bounceMultiplier);
                 DefeatEnemy();
             }
@@ -91,8 +91,7 @@ public class EnemyController : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             DefeatEnemy();
-            Destroy(collision.gameObject);
-            this.enabled = false;
+            collision.gameObject.SetActive(false);
         }
     }
 
@@ -101,19 +100,22 @@ public class EnemyController : MonoBehaviour
         AudioManager.instance.PlayEnemyDeathSound();
         _anim.SetTrigger("KillEnemy");
 
-
-        // Disable the SpriteRenderer to make the enemy invisible
-        // if (spriteRenderer != null)
-        // {
-        //     spriteRenderer.enabled = false;
-        // }
-
         // Disable the Collider to prevent further collisions
         if (enemyCollider2D != null)
         {
             enemyCollider2D.enabled = false;
         }
 
+        if (toastLoot != null)
+        {
+            toastLoot.transform.position = transform.position;
+            toastLoot.SetActive(true);
+
+            // Important: reset _startPosition so it floats from the new location
+            toastLootController.ResetStartPosition(transform.position);
+        }
+
+        this.enabled = false;
         StartCoroutine(ReviveAfterTime(10f));
     }
 
@@ -124,7 +126,7 @@ public class EnemyController : MonoBehaviour
         // Only revive if the player hasn’t already "picked up" the enemy. 
         // (You can add logic here to check if the enemy was collected or destroyed.)
 
-        if (!isCollected)
+        if (!toastLootController.isCollected)
         {
             _anim.SetTrigger("ReviveEnemy");
 
@@ -137,6 +139,7 @@ public class EnemyController : MonoBehaviour
             // Re-enable the script if you had disabled it 
             // (so it can patrol again, etc.)
             this.enabled = true;
+            toastLoot.SetActive(false);
         }
     }
 }
