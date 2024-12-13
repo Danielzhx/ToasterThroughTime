@@ -14,7 +14,6 @@ public class EnemyController : MonoBehaviour
     public float moveSpeed;
     public int patrolDestination;
     public float bounceMultiplier = 1f;
-    public GameObject damageEffectPrefab;
 
 
     void Start()
@@ -77,8 +76,6 @@ public class EnemyController : MonoBehaviour
                 // Player hit from side or below
                 if (!player.IsInvincible)
                 {
-                    Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
-
                     player.TakeDamage(1);
                 }
             }
