@@ -1,6 +1,7 @@
 using UnityEngine;
 using TarodevController;
 using System.Collections;
+using AudioManger;
 
 public class EnemyController : MonoBehaviour
 {
@@ -52,6 +53,7 @@ public class EnemyController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             if (player == null) return;
 
@@ -67,6 +69,7 @@ public class EnemyController : MonoBehaviour
 
             if (stomped)
             {
+
                 // Player landed on top
                 player.Bounce(bounceMultiplier);
                 DefeatEnemy();
@@ -94,6 +97,7 @@ public class EnemyController : MonoBehaviour
 
     private void DefeatEnemy()
     {
+        AudioManager.instance.PlayEnemyDeathSound();
         _anim.SetTrigger("KillEnemy");
 
         // Disable the Collider to prevent further collisions
