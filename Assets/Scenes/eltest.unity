@@ -3789,6 +3789,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ae17469eea1ec4f841f7fcd89416c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolPoints: []
+  moveSpeed: 0
+  patrolDestination: 0
   bounceMultiplier: 1
 --- !u!1 &936373625
 GameObject:
@@ -23229,7 +23232,7 @@ Transform:
   m_GameObject: {fileID: 1134592632}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.3, y: 25, z: -10}
+  m_LocalPosition: {x: 15.4, y: 25, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25317,7 +25320,7 @@ Transform:
   m_GameObject: {fileID: 1777955689}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 29.3, y: 25, z: -10}
+  m_LocalPosition: {x: 15.4, y: 25, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -25681,6 +25684,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ae17469eea1ec4f841f7fcd89416c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolPoints: []
+  moveSpeed: 0
+  patrolDestination: 0
   bounceMultiplier: 1
 --- !u!1 &1897608477
 GameObject:
@@ -30505,7 +30511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5453125301331248497, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.3
+      value: 15.4
       objectReference: {fileID: 0}
     - target: {fileID: 5453125301331248497, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -30541,6 +30547,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5453125301331248497, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369548172332448400, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7369548172332448400, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+      propertyPath: m_SortingLayerID
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
@@ -30745,6 +30759,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61ae17469eea1ec4f841f7fcd89416c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  patrolPoints: []
+  moveSpeed: 0
+  patrolDestination: 0
   bounceMultiplier: 1
 --- !u!1001 &8332927290296149973
 PrefabInstance:
