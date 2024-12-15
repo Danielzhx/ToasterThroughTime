@@ -5685,13 +5685,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb39bba2c47a03c47acd5ba8b02cc5d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinSound: {fileID: 8300000, guid: 1617cb2198dd7844a9ed9140a538ce94, type: 3}
-  lvl1Track: {fileID: 0}
-  enemyDeathSound: {fileID: 0}
-  zapDamagedSound: {fileID: 0}
-  zapDeathSound: {fileID: 0}
-  zapShoots: {fileID: 0}
-  zapCharging: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 8e68a8cfb051c1a4d881eae9d46e7983, type: 3}
+  lvl1Track: {fileID: 8300000, guid: f9219db70616b3a41b6e53999cd38f0d, type: 3}
+  enemyDeathSound: {fileID: 8300000, guid: 64706c5e0457e0f44bbd2381141bbf0d, type: 3}
+  zapDamagedSound: {fileID: 8300000, guid: 6e53760edd2d0a249a85dad87b498e8b, type: 3}
+  zapDeathSound: {fileID: 8300000, guid: b0acbe9f297a07144ba38dae823ff740, type: 3}
+  zapShoots: {fileID: 8300000, guid: dfdd41f9232b2d0498033961e992a5c9, type: 3}
+  zapCharging: {fileID: 8300000, guid: 28399aa175936f146aed388e121fe0fc, type: 3}
 --- !u!82 &1575982518
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5702,10 +5702,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bfc247fe3eefb184cba1dbd8ad6e254f, type: 3}
-  m_Resource: {fileID: 8300000, guid: bfc247fe3eefb184cba1dbd8ad6e254f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f9219db70616b3a41b6e53999cd38f0d, type: 3}
+  m_Resource: {fileID: 8300000, guid: f9219db70616b3a41b6e53999cd38f0d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.14
   m_Pitch: 1
   Loop: 1
   Mute: 0
