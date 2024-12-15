@@ -239,7 +239,6 @@ namespace TarodevController
         private bool CanUseCoyote => _coyoteUsable && !_grounded && _time < _frameLeftGrounded + _stats.CoyoteTime;
 
         public bool hasToast = false;
-        public float doubleJumpMultiplier = 1.5f;
         public GameObject downwardProjectilePrefab;
 
         private void HandleJump()
@@ -261,37 +260,39 @@ namespace TarodevController
             //double jump
             else if (hasToast && !_grounded)
             {
-                // Perform Double Jump
-                Bounce(doubleJumpMultiplier);
+                ExecuteJump();
                 _anim.SetTrigger("DoubleJump");
 
-                // ADD: Instantiate downward projectile
                 if (downwardProjectilePrefab != null)
                 {
                     Instantiate(downwardProjectilePrefab, transform.position, Quaternion.identity);
                 }
 
-                // Prevent multiple double jumps
                 hasToast = false;
             }
+
 
             _jumpToConsume = false;
         }
 
         public void Bounce(float bounceMultiplier)
         {
-            // Reset vertical velocity before applying bounce
+            // Reset vertical velocity
             _rb.linearVelocity = new Vector2(_rb.linearVelocity.x, 0);
 
-            // Apply jump power as a bounce using the multiplier
-            _frameVelocity.y = _stats.JumpPower * bounceMultiplier;
+            // Ensure consistent double jump by resetting jump state
+            _endedJumpEarly = false;
+            _timeJumpWasPressed = 0;
+            _bufferedJumpUsable = false;
+            _coyoteUsable = false;
 
-            // Update Rigidbody velocity
+            // Apply jump power using the multiplier
+            _frameVelocity.y = _stats.JumpPower * bounceMultiplier;
             _rb.linearVelocity = _frameVelocity;
 
-            // Optionally, trigger jump animation or effects
             Jumped?.Invoke();
         }
+
 
         private void ExecuteJump()
         {
