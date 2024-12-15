@@ -16,4 +16,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
+
+    public void RestartLevel(){
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex, LoadSceneMode.Single);
+    }
 }

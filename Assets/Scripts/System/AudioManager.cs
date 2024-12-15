@@ -23,33 +23,33 @@ namespace AudioManger
 
         public void PlayCoinSound()
         {
-            audioSource.PlayOneShot(coinSound, 0.5f);
+            audioSource.PlayOneShot(coinSound, 0.8f);
         }
 
         public void PlayEnemyDeathSound()
         {
-            audioSource.PlayOneShot(enemyDeathSound, 0.7f);
+            audioSource.PlayOneShot(enemyDeathSound, 1.0f);
         }
 
         public void PlayCharacterDamagedSound()
         {
-            audioSource.PlayOneShot(zapDamagedSound, 0.5f);
+            audioSource.PlayOneShot(zapDamagedSound, 0.8f);
         }
 
         public void PlayCharacterShootingSound()
         {
-            audioSource.PlayOneShot(zapShoots, 0.5f);
+            audioSource.PlayOneShot(zapShoots, 0.8f);
         }
 
         public void PlayCharacterChargingSound()
         {
-            audioSource.PlayOneShot(zapCharging, 0.9f);
+            audioSource.PlayOneShot(zapCharging, 1.1f);
         }
 
         public void PlayCharacterDiesSound()
         {
 
-            audioSource.PlayOneShot(zapDeathSound, 0.5f);
+            audioSource.PlayOneShot(zapDeathSound, 0.8f);
         }
 
         // Play the level 1 track and loop it
