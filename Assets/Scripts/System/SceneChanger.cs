@@ -1,11 +1,19 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour {
-    public void StartGame(){
+public class SceneChanger : MonoBehaviour
+{
+    public void StartGame()
+    {
         SceneManager.LoadScene(1, LoadSceneMode.Single);
     }
-    public void Quit(){
+    public void Quit()
+    {
         Application.Quit();
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }
