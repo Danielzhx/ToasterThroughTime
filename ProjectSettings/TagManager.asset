@@ -57,6 +57,9 @@ TagManager:
   - name: Wall
     uniqueID: 2271064229
     locked: 0
+  - name: Fog
+    uniqueID: 1732540117
+    locked: 0
   - name: Ground
     uniqueID: 4122069235
     locked: 0
