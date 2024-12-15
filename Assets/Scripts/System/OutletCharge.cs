@@ -3,9 +3,9 @@ using AudioManger;
 
 public class OutletCharge : MonoBehaviour
 {
+    [SerializeField] private Sprite brokenOutleltSprite;
     private bool used;
     private SpriteRenderer outletSprite;
-    [SerializeField] private Sprite brokenOutleltSprite;
     private Animator _anim;
     private Transform _zapTransform;
     private SpriteRenderer _zapSprite;

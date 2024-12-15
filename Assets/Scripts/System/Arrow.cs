@@ -37,15 +37,10 @@ public class Arrow : MonoBehaviour
         transform.RotateAround(pivot.position, Vector3.forward, currentRotation - transform.eulerAngles.z);
     }
 
-
-
     // Method to set the target position index based on health value
     public void SetHealthPosition(int health)
     {
         // Assuming health ranges from 0 to 4
         targetPositionIndex = Mathf.Clamp(4 - health, 1, 4);
     }
-
-
-
 }

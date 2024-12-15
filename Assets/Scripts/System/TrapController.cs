@@ -1,5 +1,5 @@
 using UnityEngine;
-using TarodevController; // assuming PlayerController is in this namespace
+using TarodevController;
 
 public class TrapController : MonoBehaviour
 {

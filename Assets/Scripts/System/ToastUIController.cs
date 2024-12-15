@@ -4,8 +4,8 @@ using TarodevController;
 
 public class ToastUIController : MonoBehaviour
 {
-    [SerializeField] private PlayerController player;
     private Image toastIconImage;
+    [SerializeField] private PlayerController player;
     [SerializeField] private Sprite normalToastSprite; 
     [SerializeField] private Sprite greyToastSprite; 
 

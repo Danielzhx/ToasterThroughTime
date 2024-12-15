@@ -10,11 +10,8 @@ namespace AudioManger
         public AudioClip lvl1Track;
         public AudioClip enemyDeathSound;
         public AudioClip zapDamagedSound;
-
         public AudioClip zapDeathSound;
-
         public AudioClip zapShoots;
-
         public AudioClip zapCharging;
 
 
