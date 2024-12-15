@@ -1,5 +1,6 @@
 using TarodevController;
 using UnityEngine;
+using AudioManger;
 
 public class PlayerShooting : MonoBehaviour
 {
@@ -29,8 +30,9 @@ public class PlayerShooting : MonoBehaviour
     void Update()
     {
         // Check if the player presses the fire button (e.g., left mouse button or space)
-        if (Input.GetButtonDown("Fire1") && charges.currentCharges > 0)
+        if (Input.GetKeyDown(KeyCode.Space) && charges.currentCharges > 0)
         {
+            AudioManager.instance.PlayCharacterShootingSound(); 
             _anim.SetTrigger("Attack");
         }
     }

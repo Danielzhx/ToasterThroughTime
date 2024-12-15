@@ -1,4 +1,5 @@
 using UnityEngine;
+using AudioManger;
 
 public class OutletCharge : MonoBehaviour
 {
@@ -34,6 +35,7 @@ public class OutletCharge : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.E) && !used)
             {
+                AudioManager.instance.PlayCharacterChargingSound();
                 increaseCharges();
             }
         }

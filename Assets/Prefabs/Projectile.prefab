@@ -166,5 +166,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifespan: 3
-  ProjectileSpeed: 20
+  ProjectileSpeed: 40
   zap: {fileID: 0}
