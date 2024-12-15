@@ -27,24 +27,27 @@ namespace AudioManger
         }
 
         public void PlayEnemyDeathSound()
-            {
-            audioSource.PlayOneShot(enemyDeathSound, 0.5f); 
-         }
+        {
+            audioSource.PlayOneShot(enemyDeathSound, 0.7f);
+        }
 
         public void PlayCharacterDamagedSound()
         {
-            audioSource.PlayOneShot(zapDamagedSound, 0.5f); 
-         }
+            audioSource.PlayOneShot(zapDamagedSound, 0.5f);
+        }
 
-        public void PlayCharacterShootingSound() {
+        public void PlayCharacterShootingSound()
+        {
             audioSource.PlayOneShot(zapShoots, 0.5f);
         }
 
-        public void PlayCharacterChargingSound() {
+        public void PlayCharacterChargingSound()
+        {
             audioSource.PlayOneShot(zapCharging, 0.9f);
         }
 
-        public void PlayCharacterDiesSound() {
+        public void PlayCharacterDiesSound()
+        {
 
             audioSource.PlayOneShot(zapDeathSound, 0.5f);
         }
