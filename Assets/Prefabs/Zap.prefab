@@ -182,7 +182,6 @@ MonoBehaviour:
   isFacingRight: 1
   damageEffectPrefab: {fileID: 341816233389350412, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
   hasToast: 0
-  doubleJumpMultiplier: 1.5
   downwardProjectilePrefab: {fileID: 6092000161487331442, guid: d91686f98bc0dcd48b460a161179fb85, type: 3}
 --- !u!114 &498741902525276008
 MonoBehaviour:
@@ -242,6 +241,7 @@ MonoBehaviour:
   _anim: {fileID: 3441132176190187858}
   _sprite: {fileID: 7369548172332448400}
   shootingPoint: {fileID: 3069695815326316509}
+  DeathFadeAnim: {fileID: 0}
 --- !u!1 &5839255335487195790
 GameObject:
   m_ObjectHideFlags: 0
