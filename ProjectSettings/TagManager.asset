@@ -59,6 +59,8 @@ TagManager:
     locked: 0
   - name: Traps
     uniqueID: 3188247533
+  - name: Fog
+    uniqueID: 1732540117
     locked: 0
   - name: Ground
     uniqueID: 4122069235
