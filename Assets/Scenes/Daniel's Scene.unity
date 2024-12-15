@@ -226,7 +226,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.8, y: -4.6}
+  m_AnchoredPosition: {x: 2.3, y: -2}
   m_SizeDelta: {x: 0.72, y: 0.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &71556623
@@ -736,7 +736,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.1, y: 6.6}
+  m_AnchoredPosition: {x: 0.5, y: 4.7}
   m_SizeDelta: {x: 0.488, y: 0.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &198895989
@@ -1176,7 +1176,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.1, y: -6.9}
+  m_AnchoredPosition: {x: 13.1, y: -4.6}
   m_SizeDelta: {x: 0.571, y: 0.486}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &258229784
@@ -3050,7 +3050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Walk over the \t     to pick it up and if you don't enemies will revive"
+  m_text: "Walk over the \t     to pick it up. \nIf you don't enemies will revive"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
   m_sharedMaterial: {fileID: 7785367100430193031, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
@@ -3326,7 +3326,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "When you have a \t  You can hit            or \t      in the air to perform
-    a double jump (You can have one \t   at a time so be carefull)"
+    a double jump (You can only have one \t   at a time so be carefull)"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
   m_sharedMaterial: {fileID: 7785367100430193031, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
@@ -4179,7 +4179,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 30, y: 4.3}
+  m_AnchoredPosition: {x: 30.3, y: 6.9}
   m_SizeDelta: {x: 0.925, y: 0.548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &941473750
@@ -4928,7 +4928,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.6, y: 2.8}
+  m_AnchoredPosition: {x: 0.9, y: 2.3}
   m_SizeDelta: {x: 0.72, y: 0.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1160690184
@@ -5689,7 +5689,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: next to an outlet to charge your
+  m_text: Press              next to an outlet to regain a charge
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
   m_sharedMaterial: {fileID: 7785367100430193031, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
@@ -5874,7 +5874,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Jumping on enemies can also kill them!!
+  m_text: Jumping on enemies will also kill them!!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
   m_sharedMaterial: {fileID: 7785367100430193031, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
@@ -6462,7 +6462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.33, y: 5.1}
+  m_AnchoredPosition: {x: -2.2, y: 7.2}
   m_SizeDelta: {x: 0.72, y: 0.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1629509727
@@ -7479,12 +7479,36 @@ PrefabInstance:
     m_TransformParent: {fileID: 328512782}
     m_Modifications:
     - target: {fileID: 4590513139615866929, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4590513139615866929, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
       propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4793245141751732673, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
+      propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4793245141751732673, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125254643291244551, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125254643291244551, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 6316128
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001425735121828296, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
+      propertyPath: m_fontColor.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6001425735121828296, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 16777215
       objectReference: {fileID: 0}
     - target: {fileID: 7488873081582338222, guid: f4e01413ae4feb8d391ca898cfadbb6f, type: 3}
       propertyPath: m_Pivot.x
@@ -7613,7 +7637,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19.05, y: 4.4}
+  m_AnchoredPosition: {x: 18.9, y: 7}
   m_SizeDelta: {x: 0.502, y: 0.358}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &2069303282
