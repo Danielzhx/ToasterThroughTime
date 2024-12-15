@@ -44,7 +44,7 @@ namespace AudioManger
         }
 
         public void PlayCharacterChargingSound() {
-            audioSource.PlayOneShot(zapCharging, 0.5f);
+            audioSource.PlayOneShot(zapCharging, 0.9f);
         }
 
         public void PlayCharacterDiesSound() {
