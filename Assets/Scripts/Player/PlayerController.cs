@@ -109,15 +109,30 @@ namespace TarodevController
         // Method to handle taking damage
         public GameObject damageEffectPrefab;
 
-        public void TakeDamage(int damageAmount)
+        private IEnumerator BlinkHealthBar()
         {
+            Color originalColor = healthBar.fillRect.GetComponent<Image>().color;
+            Color blinkColor = Color.red;
+            for (int i = 0; i < 6; i++)
+            {
+                healthBar.fillRect.GetComponent<Image>().color = blinkColor;
+                yield return new WaitForSeconds(0.1f);
+                healthBar.fillRect.GetComponent<Image>().color = originalColor;
+                yield return new WaitForSeconds(0.1f);
+            }
+        }
+
+       public void TakeDamage(int damageAmount)
+        {
+
             AudioManager.instance.PlayCharacterDamagedSound();
             Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
-            // Reduce current health by the damage amount
             currentHealth -= damageAmount;
             healthBar.value = currentHealth;
 
-            // Prevent health from going below zero
+            // Start blinking
+            StartCoroutine(BlinkHealthBar());
+
             if (currentHealth <= 0)
             {
                 AudioManager.instance.PlayCharacterDiesSound();
@@ -130,12 +145,9 @@ namespace TarodevController
                 return;
             }
 
-
             _anim.SetTrigger("TakeDamage");
 
             float direction = _sr.flipX ? 1f : -1f;
-
-            // Set the frame velocity directly 
             _frameVelocity.x = direction * bounceForce;
             _frameVelocity.y = bounceVerticalForce;
 
@@ -160,8 +172,8 @@ namespace TarodevController
         {
             _frameInput = new FrameInput
             {
-                JumpDown = Input.GetKeyDown(KeyCode.W),
-                JumpHeld = Input.GetKey(KeyCode.W),
+                JumpDown = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow),
+                JumpHeld = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow),
                 Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))
             };
 
