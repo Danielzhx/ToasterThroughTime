@@ -138,6 +138,7 @@ namespace TarodevController
             // Prevent health from going below zero
             if (currentHealth <= 0)
             {
+                AudioManager.instance.PlayCharacterDiesSound();
                 currentHealth = 0;
                 _anim.SetTrigger("Dying");
                 _rb.linearVelocity = new Vector2(0, 0);
@@ -191,8 +192,10 @@ namespace TarodevController
         {
             _frameInput = new FrameInput
             {
-                JumpDown = Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.C),
-                JumpHeld = Input.GetButton("Jump") || Input.GetKey(KeyCode.C),
+                JumpDown = Input.GetKeyDown(KeyCode.W),
+                //Input.GetButtonDown("Jump") || 
+                JumpHeld =  Input.GetKey(KeyCode.W),
+                //Input.GetButton("Jump") ||
                 Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))
             };
 

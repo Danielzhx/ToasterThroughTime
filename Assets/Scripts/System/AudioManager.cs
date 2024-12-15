@@ -11,6 +11,12 @@ namespace AudioManger
         public AudioClip enemyDeathSound;
         public AudioClip zapDamagedSound;
 
+        public AudioClip zapDeathSound;
+
+        public AudioClip zapShoots;
+
+        public AudioClip zapCharging;
+
 
         void Awake()
         {
@@ -32,6 +38,19 @@ namespace AudioManger
         {
             audioSource.PlayOneShot(zapDamagedSound, 0.5f); 
          }
+
+        public void PlayCharacterShootingSound() {
+            audioSource.PlayOneShot(zapShoots, 0.5f);
+        }
+
+        public void PlayCharacterChargingSound() {
+            audioSource.PlayOneShot(zapCharging, 0.5f);
+        }
+
+        public void PlayCharacterDiesSound() {
+
+            audioSource.PlayOneShot(zapDeathSound, 0.5f);
+        }
 
         // Play the level 1 track and loop it
         public void PlayLvl1Track()
