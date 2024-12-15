@@ -3,13 +3,13 @@ using AudioManger;
 
 public class OutletCharge : MonoBehaviour
 {
-    [SerializeField] private Sprite brokenOutleltSprite;
+    [SerializeField] private Sprite brokenOutletSprite;
     private bool used;
     private SpriteRenderer outletSprite;
     private Animator _anim;
     private Transform _zapTransform;
     private SpriteRenderer _zapSprite;
-    private SpriteRenderer _elctricityIcon;
+    private SpriteRenderer _electricityIcon;
 
     public Charges charges;
     [Range(1, 4)]
@@ -26,7 +26,7 @@ public class OutletCharge : MonoBehaviour
         _zapSprite = Zap.GetComponent<SpriteRenderer>();
         _anim = Zap.GetComponent<Animator>();
         // DO NOT TOUCH OR EVEN LOOK AT THIS NEXT LINE!!!!!
-        _elctricityIcon = this.gameObject.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>();
+        _electricityIcon = this.gameObject.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>();
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -36,15 +36,16 @@ public class OutletCharge : MonoBehaviour
             if (Input.GetKey(KeyCode.E) && !used)
             {
                 AudioManager.instance.PlayCharacterChargingSound();
-                increaseCharges();
+                IncreaseCharges();
             }
         }
     }
 
-    void increaseCharges()
+    void IncreaseCharges()
     {
         if (charges.currentCharges < charges.totalCharges)
         {
+            // Determine the position to place the Zap effect based on player's facing direction
             if (_zapSprite.flipX)
             {
                 _zapTransform.position = RightChargePoint.position;
@@ -55,10 +56,17 @@ public class OutletCharge : MonoBehaviour
             }
 
             _anim.SetTrigger("Charge");
-            charges.currentCharges += gainedCharges;
+
+            // Add charges using the Charges class method
+            charges.AddCharges(gainedCharges);
+
             used = true;
-            outletSprite.sprite = brokenOutleltSprite;
-            _elctricityIcon.color = new Color(0.25f, 0.25f, 0.25f, 1);
+            outletSprite.sprite = brokenOutletSprite;
+            _electricityIcon.color = new Color(0.25f, 0.25f, 0.25f, 1);
+        }
+        else
+        {
+            Debug.Log("Player already has maximum charges.");
         }
     }
 }
