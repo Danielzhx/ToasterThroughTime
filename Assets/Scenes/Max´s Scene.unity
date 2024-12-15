@@ -8603,11 +8603,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -91
+      value: -168.7
       objectReference: {fileID: 0}
     - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -64.9
+      value: -48.3
       objectReference: {fileID: 0}
     - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8679,7 +8679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
       propertyPath: InitialModule.gravityModifier.scalar
-      value: 500
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
       propertyPath: EmissionModule.m_Bursts.Array.data[0].repeatInterval
