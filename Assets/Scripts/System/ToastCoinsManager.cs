@@ -7,6 +7,8 @@ public class ToastCoinsManager : MonoBehaviour
     public int score;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI pauseMenuScoretext;
+    public TextMeshProUGUI deathScreenScoretext;
+    public TextMeshProUGUI winScreenScoretext;
 
     void Awake()
     {
@@ -17,5 +19,7 @@ public class ToastCoinsManager : MonoBehaviour
     {
         scoreText.text = score.ToString();
         pauseMenuScoretext.text = score.ToString();
+        deathScreenScoretext.text = score.ToString();
+        winScreenScoretext.text = score.ToString();
     }
 }

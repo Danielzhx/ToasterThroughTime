@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: "Assets/Scenes/Max\xB4s Scene.unity"
     guid: e379bcd2b27a3fe4ab7fb4b7943b1985
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Frillion Test Pen.unity
     guid: e88bdd926d4b2930d8bbd483a18c2f6b
   - enabled: 1
