@@ -239,7 +239,6 @@ namespace TarodevController
         private bool CanUseCoyote => _coyoteUsable && !_grounded && _time < _frameLeftGrounded + _stats.CoyoteTime;
 
         public bool hasToast = false;
-        public float doubleJumpMultiplier = 1.5f;
         public GameObject downwardProjectilePrefab;
 
         private void HandleJump()
@@ -261,8 +260,7 @@ namespace TarodevController
             //double jump
             else if (hasToast && !_grounded)
             {
-                // Perform Double Jump
-                Bounce(doubleJumpMultiplier);
+                ExecuteJump();
                 _anim.SetTrigger("DoubleJump");
 
                 if (downwardProjectilePrefab != null)
@@ -270,7 +268,6 @@ namespace TarodevController
                     Instantiate(downwardProjectilePrefab, transform.position, Quaternion.identity);
                 }
 
-                // Prevent multiple double jumps
                 hasToast = false;
             }
 
