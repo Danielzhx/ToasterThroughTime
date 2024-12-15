@@ -124,6 +124,8 @@ namespace TarodevController
                 currentHealth = 0;
                 _anim.SetTrigger("Dying");
                 _rb.linearVelocity = new Vector2(0, 0);
+                _rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                _col.enabled = false;
                 this.enabled = false;
                 return;
             }
