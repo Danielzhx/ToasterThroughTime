@@ -172,8 +172,8 @@ namespace TarodevController
         {
             _frameInput = new FrameInput
             {
-                JumpDown = Input.GetKeyDown(KeyCode.W),
-                JumpHeld = Input.GetKey(KeyCode.W),
+                JumpDown = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow),
+                JumpHeld = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow),
                 Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))
             };
 
