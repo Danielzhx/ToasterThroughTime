@@ -16,6 +16,7 @@ namespace TarodevController
         [Header("Settings")]
         [SerializeField, Range(1f, 3f)]
         public Transform shootingPoint;
+        public Animator DeathFadeAnim;
 
         private float _maxIdleSpeed = 2;
         private Vector2 firingPosition;
@@ -89,5 +90,9 @@ namespace TarodevController
         private static readonly int GroundedKey = Animator.StringToHash("Grounded");
         private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
+
+        public void TriggerDeathFade(){
+            DeathFadeAnim.SetTrigger("Death");
+        }
     }
 }
