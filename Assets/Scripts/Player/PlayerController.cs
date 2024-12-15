@@ -1,8 +1,8 @@
 using System;
 using UnityEngine;
 using System.Collections;
-using Unity.Cinemachine;
 using AudioManger;
+using UnityEngine.UI;
 
 
 namespace TarodevController
@@ -17,34 +17,29 @@ namespace TarodevController
     [RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
     public class PlayerController : MonoBehaviour, IPlayerController
     {
-        [SerializeField] private ScriptableStats _stats;
+        private float _time;
         private Rigidbody2D _rb;
         private CapsuleCollider2D _col;
         private FrameInput _frameInput;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
         private SpriteRenderer _sr;
-
-        //private Animator Walking_Animator;
-
-        // Invincibility settings (optional to prevent quick repeated hits)
-        //private bool isInvincible = false;
         private Animator _anim;
+        private float _idleTimer = 0f;
+
+        [SerializeField] private ScriptableStats _stats;
         [SerializeField] private bool isInvincible = false;
         [SerializeField] private float invincibilityDuration = 1f;
         [SerializeField] private float bounceForce = 5f;
         [SerializeField] private float bounceVerticalForce = 2f;
         [SerializeField] private float idleThreshold = 5f;
-        private float _idleTimer = 0f;
 
 
         // Health Pool
         public int maxHealth = 4;  // Maximum health
         public int currentHealth;  // Current health
-
+        public Slider healthBar;  // Reference to the health bar UI
         public bool IsInvincible => isInvincible;
-        // Reference to the HUD Arrow script
-        public Arrow healthArrow;
         public bool isFacingRight = true;
 
         #region Interface
@@ -54,8 +49,6 @@ namespace TarodevController
         public event Action Jumped;
 
         #endregion
-        private float _time;
-
 
         private void Awake()
         {
@@ -68,12 +61,6 @@ namespace TarodevController
 
             // Initialize current health
             currentHealth = maxHealth;
-
-
-            if (healthArrow != null)
-            {
-                healthArrow.SetHealthPosition(4 - currentHealth);
-            }
 
         }
 
@@ -98,12 +85,6 @@ namespace TarodevController
             _time += Time.deltaTime;
             GatherInput();
 
-            // Add code here to update the UI or animations based on current health if needed
-            //if (currentHealth <= 0)
-            //{
-            //    Die();
-            //}
-
             bool isStandingStill = _grounded
                        && Mathf.Abs(_frameInput.Move.x) < 0.01f
                        && Mathf.Abs(_frameInput.Move.y) < 0.01f;
@@ -122,18 +103,19 @@ namespace TarodevController
                 _anim.SetTrigger("Bored");
                 _idleTimer = 0f;  // Reset timer so it doesn’t keep triggering repeatedly
             }
-
         }
 
 
         // Method to handle taking damage
         public GameObject damageEffectPrefab;
+
         public void TakeDamage(int damageAmount)
         {
             AudioManager.instance.PlayCharacterDamagedSound();
             Instantiate(damageEffectPrefab, transform.position, Quaternion.identity);
             // Reduce current health by the damage amount
             currentHealth -= damageAmount;
+            healthBar.value = currentHealth;
 
             // Prevent health from going below zero
             if (currentHealth <= 0)
@@ -142,6 +124,8 @@ namespace TarodevController
                 currentHealth = 0;
                 _anim.SetTrigger("Dying");
                 _rb.linearVelocity = new Vector2(0, 0);
+                _rb.constraints = RigidbodyConstraints2D.FreezeAll;
+                _col.enabled = false;
                 this.enabled = false;
                 return;
             }
@@ -157,12 +141,6 @@ namespace TarodevController
 
             _rb.linearVelocity = _frameVelocity;
 
-            // Update health HUD arrow position
-            if (healthArrow != null)
-            {
-                healthArrow.SetHealthPosition(4 - currentHealth);
-            }
-
             // Start invincibility if needed
             StartCoroutine(InvincibilityCoroutine());
         }
@@ -175,16 +153,6 @@ namespace TarodevController
             yield return new WaitForSeconds(invincibilityDuration);
             isInvincible = false;
         }
-
-        // Method to handle player death
-        //private void Die()
-        //{
-        //  Debug.Log("Player has died.");
-
-        // Add player death logic here (e.g., play death animation, disable player control)
-        // this.enabled = false; // Disables the PlayerController script
-        //}
-
         #endregion
 
 
@@ -193,9 +161,7 @@ namespace TarodevController
             _frameInput = new FrameInput
             {
                 JumpDown = Input.GetKeyDown(KeyCode.W),
-                //Input.GetButtonDown("Jump") || 
-                JumpHeld =  Input.GetKey(KeyCode.W),
-                //Input.GetButton("Jump") ||
+                JumpHeld = Input.GetKey(KeyCode.W),
                 Move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"))
             };
 
@@ -210,11 +176,6 @@ namespace TarodevController
                 _jumpToConsume = true;
                 _timeJumpWasPressed = _time;
             }
-
-            // if (_frameInput.Move.x == 1 || _frameInput.Move.x == -1)
-            // {
-            //     Walking_Animator.SetTrigger("InitiateWalk");
-            // }
         }
 
         private void FixedUpdate()
@@ -263,7 +224,6 @@ namespace TarodevController
 
             Physics2D.queriesStartInColliders = _cachedQueryStartInColliders;
         }
-
         #endregion
 
 
@@ -277,10 +237,11 @@ namespace TarodevController
 
         private bool HasBufferedJump => _bufferedJumpUsable && _time < _timeJumpWasPressed + _stats.JumpBuffer;
         private bool CanUseCoyote => _coyoteUsable && !_grounded && _time < _frameLeftGrounded + _stats.CoyoteTime;
-        public bool hasToast = false;
 
+        public bool hasToast = false;
         public float doubleJumpMultiplier = 1.5f;
         public GameObject downwardProjectilePrefab;
+
         private void HandleJump()
         {
             if (!_endedJumpEarly && !_grounded && !_frameInput.JumpHeld && _rb.linearVelocity.y > 0)
@@ -344,45 +305,24 @@ namespace TarodevController
 
         #endregion
 
-        #region Horizontal
 
+        #region Horizontal
         private void HandleDirection()
         {
             if (_frameInput.Move.x == 0)
             {
                 var deceleration = _grounded ? _stats.GroundDeceleration : _stats.AirDeceleration;
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, 0, deceleration * Time.fixedDeltaTime);
-
             }
             else
             {
                 _frameVelocity.x = Mathf.MoveTowards(_frameVelocity.x, _frameInput.Move.x * _stats.MaxSpeed, _stats.Acceleration * Time.fixedDeltaTime);
-
-
-                // // Flip character direction
-                // FlipCharacter(_frameInput.Move.x);
-
             }
         }
-
-        // private void FlipCharacter(float direction)
-        // {
-        //     Vector3 scale = transform.localScale;
-        //     if (direction > 0 && scale.x < 0 || direction < 0 && scale.x > 0)
-        //     {
-        //         scale.x *= -1; // Flip the x-scale
-        //         <transfor>m.localScale = scale;
-        //         // if flipped while facing right, face left and vice versa.
-        //         if (isFacingRight){isFacingRight = false;}
-        //         else {isFacingRight = true;}
-
-        //     }
-        // }
-
         #endregion
 
-        #region Gravity
 
+        #region Gravity
         private void HandleGravity()
         {
             if (_grounded && _frameVelocity.y <= 0f)
@@ -396,15 +336,13 @@ namespace TarodevController
                 _frameVelocity.y = Mathf.MoveTowards(_frameVelocity.y, -_stats.MaxFallSpeed, inAirGravity * Time.fixedDeltaTime);
             }
         }
-
         #endregion
 
         private void ApplyMovement()
         {
             _rb.linearVelocity = _frameVelocity;
-            // Walking_Animator.SetInteger("YVelocity", (int)_frameVelocity.y);
-            // Walking_Animator.SetFloat("MovementVelocity", Mathf.Abs(_frameVelocity.x));
         }
+
 
 #if UNITY_EDITOR
         private void OnValidate()
@@ -413,7 +351,6 @@ namespace TarodevController
         }
 #endif
     }
-
     public struct FrameInput
     {
         public bool JumpDown;

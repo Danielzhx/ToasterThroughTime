@@ -8,12 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StartScreen.unity
     guid: 3ae62f88360d6faed8f4e592330d1d4d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainScene.unity
     guid: 7cee846f75e1d784ba36709335458fda
   - enabled: 0
     path: "Assets/Scenes/Max\xB4s Scene.unity"
-    guid: 1ee43756aa770754683feac945d9ed99
+    guid: e379bcd2b27a3fe4ab7fb4b7943b1985
+  - enabled: 0
+    path: Assets/Scenes/Frillion Test Pen.unity
+    guid: e88bdd926d4b2930d8bbd483a18c2f6b
+  - enabled: 1
+    path: Assets/Scenes/Daniel's Scene.unity
+    guid: df8f5220aee90eb43a45a79e89355320
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

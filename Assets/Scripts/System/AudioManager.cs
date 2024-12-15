@@ -10,11 +10,8 @@ namespace AudioManger
         public AudioClip lvl1Track;
         public AudioClip enemyDeathSound;
         public AudioClip zapDamagedSound;
-
         public AudioClip zapDeathSound;
-
         public AudioClip zapShoots;
-
         public AudioClip zapCharging;
 
 
@@ -44,7 +41,7 @@ namespace AudioManger
         }
 
         public void PlayCharacterChargingSound() {
-            audioSource.PlayOneShot(zapCharging, 0.5f);
+            audioSource.PlayOneShot(zapCharging, 0.9f);
         }
 
         public void PlayCharacterDiesSound() {

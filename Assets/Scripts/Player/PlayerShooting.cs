@@ -1,4 +1,3 @@
-using TarodevController;
 using UnityEngine;
 using AudioManger;
 
@@ -6,20 +5,15 @@ public class PlayerShooting : MonoBehaviour
 {
     // Reference to the projectile prefab
     public GameObject projectilePrefab;
-
     // Shooting force to apply to the projectile
     public float projectileSpeed = 10f;
-
     // Offset for where to instantiate the projectile
     public Transform firePoint;
     public Charges charges;
-
     public GameObject[] Projectiles;
 
+
     private int currentProjIndex = 0;
-
-    private PlayerController playerController;
-
     private Animator _anim;
 
     void Awake()

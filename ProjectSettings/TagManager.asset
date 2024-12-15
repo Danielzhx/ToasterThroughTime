@@ -78,5 +78,8 @@ TagManager:
   - name: ForeGroundProps
     uniqueID: 1930492717
     locked: 0
+  - name: UI
+    uniqueID: 2292088689
+    locked: 0
   m_RenderingLayers:
   - Default
