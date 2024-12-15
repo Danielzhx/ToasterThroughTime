@@ -5580,6 +5580,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   score: 0
   scoreText: {fileID: 312753138}
+  pauseMenuScoretext: {fileID: 0}
 --- !u!4 &1017420967
 Transform:
   m_ObjectHideFlags: 0
@@ -8460,6 +8461,9 @@ MonoBehaviour:
   lvl1Track: {fileID: 8300000, guid: f9219db70616b3a41b6e53999cd38f0d, type: 3}
   enemyDeathSound: {fileID: 8300000, guid: 64706c5e0457e0f44bbd2381141bbf0d, type: 3}
   zapDamagedSound: {fileID: 8300000, guid: 6e53760edd2d0a249a85dad87b498e8b, type: 3}
+  zapDeathSound: {fileID: 8300000, guid: b0acbe9f297a07144ba38dae823ff740, type: 3}
+  zapShoots: {fileID: 8300000, guid: dfdd41f9232b2d0498033961e992a5c9, type: 3}
+  zapCharging: {fileID: 8300000, guid: 28399aa175936f146aed388e121fe0fc, type: 3}
 --- !u!82 &1575982518
 AudioSource:
   m_ObjectHideFlags: 0
