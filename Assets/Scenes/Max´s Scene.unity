@@ -8594,18 +8594,6 @@ PrefabInstance:
       value: DamageEffect
       objectReference: {fileID: 0}
     - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.1939
-      objectReference: {fileID: 0}
-    - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.1939
-      objectReference: {fileID: 0}
-    - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.1939
-      objectReference: {fileID: 0}
-    - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
       propertyPath: m_LocalPosition.x
       value: -168.7
       objectReference: {fileID: 0}
@@ -8644,54 +8632,6 @@ PrefabInstance:
     - target: {fileID: 1756944944236472633, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: looping
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: simulationSpeed
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: ShapeModule.type
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: ShapeModule.arc.mode
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: VelocityModule.radial.scalar
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: CollisionModule.m_Dampen.scalar
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: InitialModule.gravityModifier.scalar
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].repeatInterval
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5542691274412981751, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
-      propertyPath: EmissionModule.m_Bursts.Array.data[0].countCurve.scalar
-      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11723,29 +11663,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7369548172332448400, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
-      propertyPath: m_SortingLayer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369548172332448400, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
-      propertyPath: m_SortingLayerID
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
-      propertyPath: idleThreshold
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
       propertyPath: damageEffectPrefab
       value: 
       objectReference: {fileID: 1666037833}
-    - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
-      propertyPath: downwardProjectilePrefab
-      value: 
-      objectReference: {fileID: 6092000161487331442, guid: d91686f98bc0dcd48b460a161179fb85, type: 3}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 8522643639703871083, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
