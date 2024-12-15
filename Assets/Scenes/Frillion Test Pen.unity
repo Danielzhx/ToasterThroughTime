@@ -1173,6 +1173,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6550057614288568180, guid: af50f8aa0f5733545a88845b7f925d4f, type: 3}
   m_PrefabInstance: {fileID: 1610429802}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1610429804 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9137181236359282294, guid: af50f8aa0f5733545a88845b7f925d4f, type: 3}
+  m_PrefabInstance: {fileID: 1610429802}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1626426930
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1917,6 +1928,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1610429804}
+    - target: {fileID: 7686921491613073625, guid: 8372ecc5691a9590fabcceecf69f674b, type: 3}
+      propertyPath: damageEffectPrefab
+      value: 
+      objectReference: {fileID: 341816233389350412, guid: e7a79867c5a92f5438a36600c4f25764, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

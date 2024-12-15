@@ -125,12 +125,12 @@ TextureImporter:
       name: controls_sprite-export_0
       rect:
         serializedVersion: 2
-        x: 26
-        y: 50
+        x: 36
+        y: 83
         width: 30
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -147,12 +147,12 @@ TextureImporter:
       name: controls_sprite-export_1
       rect:
         serializedVersion: 2
-        x: 26
-        y: 30
+        x: 36
+        y: 63
         width: 30
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -169,12 +169,12 @@ TextureImporter:
       name: controls_sprite-export_2
       rect:
         serializedVersion: 2
-        x: 55
-        y: 50
+        x: 65
+        y: 83
         width: 30
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: controls_sprite-export_3
       rect:
         serializedVersion: 2
-        x: 16
-        y: 8
+        x: 30
+        y: 22
         width: 72
         height: 21
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,11 +209,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: controls_sprite-export_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 63
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22e28bec5285575669067d9c94e0619d
+      internalID: 176867720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_sprite-export_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 43
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7ba12b0c94517be9aee127befdfd2a
+      internalID: 1041173569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: controls_sprite-export_6
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 43
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e671193f9e12dc23a6cd76d84741759
+      internalID: 850697609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 99d919458b6b8ba4d82838da90bee335
     internalID: 0
     vertices: []
     indices: 
@@ -227,6 +293,9 @@ TextureImporter:
       controls_sprite-export_1: -5372138859996011721
       controls_sprite-export_2: -110814686120225673
       controls_sprite-export_3: 4214678455050039747
+      controls_sprite-export_4: 176867720
+      controls_sprite-export_5: 1041173569
+      controls_sprite-export_6: 850697609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
