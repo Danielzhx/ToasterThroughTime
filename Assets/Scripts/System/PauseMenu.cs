@@ -4,6 +4,8 @@ public class PauseMenu : MonoBehaviour
 {
     [Header("References")]
     public GameObject pauseMenuPanel;
+    public GameObject deathScreenPanel;
+    public GameObject winScreenPanel;
 
     private bool isPaused = false;
 
@@ -32,6 +34,8 @@ public class PauseMenu : MonoBehaviour
     public void PauseGame()
     {
         isPaused = true;
+        deathScreenPanel.SetActive(false);
+        winScreenPanel.SetActive(false);
         pauseMenuPanel.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -40,6 +44,8 @@ public class PauseMenu : MonoBehaviour
     {
         isPaused = false;
         pauseMenuPanel.SetActive(false);
+        deathScreenPanel.SetActive(true);
+        winScreenPanel.SetActive(true);
         Time.timeScale = 1f;
     }
 
