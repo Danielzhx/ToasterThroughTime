@@ -1,0 +1,16 @@
+{
+    "name": "Utillities",
+    "rootNamespace": "TTT.Utillities",
+    "references": [
+        "GUID:f3eee718083b1c447aa67ff64faabb08"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
