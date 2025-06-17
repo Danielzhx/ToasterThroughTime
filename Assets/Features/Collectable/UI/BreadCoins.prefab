@@ -142,15 +142,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
+  m_sharedMaterial: {fileID: 7785367100430193031, guid: fb9b05930efadaa4d80afa3f7b4c7501, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4290822584
-  m_fontColor: {r: 0.72156864, g: 0.7568628, b: 0.75294125, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 3
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -220,6 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3343072842495795047}
+  - component: {fileID: 5884387014233406508}
   m_Layer: 5
   m_Name: BreadCoins
   m_TagString: Untagged
@@ -248,3 +249,18 @@ RectTransform:
   m_AnchoredPosition: {x: 322, y: 191}
   m_SizeDelta: {x: 73.8, y: 31.38}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5884387014233406508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4329197342768002313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2efa9218e25278e4696d837d7eea4167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinText: {fileID: 5387033736587605602}
+  coinImage: {fileID: 1299939549142411635}
+  animDuration: 0.5

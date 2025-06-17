@@ -29,7 +29,6 @@ public class CoinsController : MonoBehaviour
 
             //Plays the udio of collecting the audio
             AudioManager.instance.PlayCoinSound();
-            ToastCoinsManager.instance.score += 1;
             // Destroy the coin object
             Destroy(gameObject);
         }

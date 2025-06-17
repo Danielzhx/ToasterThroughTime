@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace TTT.Utillities.Pooling
@@ -23,8 +24,8 @@ namespace TTT.Utillities.Pooling
 
     public class ObjectPool<T> : IObjectPool<T> where T : Spawnable, IPoolable
     {
-        protected readonly List<T> _pooledObjects;
-        protected readonly List<T> _spawnedObjects;
+        protected readonly List<T> _pooledObjects = new();
+        protected readonly List<T> _spawnedObjects = new();
 
         public int pooledCount => _pooledObjects.Count;
         public int spawnCount => _spawnedObjects.Count;
@@ -33,13 +34,13 @@ namespace TTT.Utillities.Pooling
         protected uint _maxPoolSize;
         protected bool _resizeOnFull = true;
 
-        public T prefab { get; private set; }
+        public T Prefab { get; private set; }
         protected GameObject _container;
         public Transform Container => _container.transform;
 
         public ObjectPool<T> CreateObjectPool(T prefab, Transform poolsContainer = null, uint initialPoolSize = 10, bool resizeOnFull = true, uint maxPoolSize = 0, int instancesPerFrame = 1)
         {
-            this.prefab = prefab;
+            Prefab = prefab;
             _initialPoolSize = initialPoolSize;
 
             if (initialPoolSize > maxPoolSize)
@@ -99,6 +100,65 @@ namespace TTT.Utillities.Pooling
             }
         }
 
+        public T Spawn()
+        {
+            return Spawn(Vector2.zero, Quaternion.identity);
+        }
+
+        public T Spawn(Vector2 position)
+        {
+            return Spawn(position, Quaternion.identity);
+        }
+
+        public T Spawn(Transform parent, bool worldSpace = true)
+        {
+            return parent ? Spawn(parent.position, parent.rotation, parent, worldSpace) : Spawn();
+        }
+
+        public T Spawn(Vector2 position, Transform parent, bool worldSpace = true)
+        {
+            return Spawn(position, Quaternion.identity, parent, worldSpace);
+        }
+
+        public T Spawn(Vector2 position, Quaternion rotation, Transform parent = null, bool worldSpace = true)
+        {
+            if (pooledCount <= 0)
+            {
+                if (_resizeOnFull)
+                {
+                    var sp = Object.Instantiate(Prefab, Container, worldSpace);
+                    
+                    sp.Pool = this;
+                    sp.name = Prefab.name;
+                    sp.gameObject.SetActive(false);
+                    _pooledObjects.Add(sp);
+
+                    if (spawnCount >= _maxPoolSize)
+                        _maxPoolSize++;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+            var spawn = _pooledObjects.First();
+            _pooledObjects.Remove(spawn);
+
+            if (!spawn)
+                return null;
+
+            var transform = spawn.transform;
+            if(parent)
+                transform.SetParent(parent,worldSpace);
+            
+            transform.SetPositionAndRotation(position, rotation);
+            _spawnedObjects.Add(spawn);
+            spawn.Spawn();
+
+            return spawn;
+        }
+
         public void Recycle(T spawn, bool onDisableCalled = false)
         {
             if (!_spawnedObjects.Contains(spawn))
@@ -116,7 +176,7 @@ namespace TTT.Utillities.Pooling
         {
             if (spawn is T poolable)
             {
-                Recycle(spawn, onDisableCalled);
+                Recycle(poolable, onDisableCalled);
             }
         }
     }

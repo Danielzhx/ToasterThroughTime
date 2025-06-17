@@ -7,7 +7,7 @@ namespace TTT.Utillities.Pooling
     [DefaultExecutionOrder(-1000)]
     public class PoolManager :  SingletonMonobehaviour<PoolManager>
     {
-        public Dictionary<string, Transform> PoolTransforms;
+        public Dictionary<string, Transform> PoolTransforms = new();
         public GenericDictionary PoolDict = new();
 
         public void Add(string key, object pool, Transform container)
