@@ -12,7 +12,7 @@ public class Collectable : Spawnable
         OnSpawn += Initialize;
     }
 
-    private void Initialize()
+    public virtual void Initialize()
     {
         id = Guid.NewGuid();
     }

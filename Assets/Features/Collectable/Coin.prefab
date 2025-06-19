@@ -138,3 +138,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Spawned: 0
+  animationDuration: 5
