@@ -1,0 +1,18 @@
+{
+    "name": "TTT.Systems",
+    "rootNamespace": "TTT.System",
+    "references": [
+        "GUID:dfad8d630ed654e4a9ab4791fc655912",
+        "GUID:f3eee718083b1c447aa67ff64faabb08",
+        "GUID:6df0451694bbd984ebd9849d99670282"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

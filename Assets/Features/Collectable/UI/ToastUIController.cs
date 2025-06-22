@@ -2,25 +2,29 @@ using UnityEngine;
 using UnityEngine.UI;
 using TarodevController;
 
-public class ToastUIController : MonoBehaviour
+namespace TTT
 {
-    private Image toastIconImage;
-    [SerializeField] private PlayerController player;
-    [SerializeField] private Sprite normalToastSprite; 
-    [SerializeField] private Sprite greyToastSprite; 
-
-    void Start()
+    public class ToastUIController : MonoBehaviour
     {
-        toastIconImage = GetComponent<Image>();
-    }
-    
-    private void Update()
-    {
-        if (player == null || toastIconImage == null) return;
+        private Image toastIconImage;
+        [SerializeField] private PlayerController player;
+        [SerializeField] private Sprite normalToastSprite; 
+        [SerializeField] private Sprite greyToastSprite; 
 
-        if (player.hasToast)
-            toastIconImage.sprite = normalToastSprite;
-        else
-            toastIconImage.sprite = greyToastSprite;
+        void Start()
+        {
+            toastIconImage = GetComponent<Image>();
+        }
+        
+        private void Update()
+        {
+            if (player == null || toastIconImage == null) return;
+
+            if (player.hasToast)
+                toastIconImage.sprite = normalToastSprite;
+            else
+                toastIconImage.sprite = greyToastSprite;
+        }
     }
 }
+

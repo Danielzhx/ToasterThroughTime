@@ -1,56 +1,60 @@
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+namespace TTT.System
 {
-    [Header("References")]
-    public GameObject pauseMenuPanel;
-    public GameObject deathScreenPanel;
-    public GameObject winScreenPanel;
-
-    private bool isPaused = false;
-
-    void Start()
+    public class PauseMenu : MonoBehaviour
     {
-        pauseMenuPanel.SetActive(false);
-    }
+        [Header("References")]
+        public GameObject pauseMenuPanel;
+        public GameObject deathScreenPanel;
+        public GameObject winScreenPanel;
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        private bool isPaused = false;
+
+        void Start()
         {
-            if (isPaused)
+            pauseMenuPanel.SetActive(false);
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                ResumeGame();
-                return;
-            }
-            else
-            {
-                PauseGame();
-                return;
+                if (isPaused)
+                {
+                    ResumeGame();
+                    return;
+                }
+                else
+                {
+                    PauseGame();
+                    return;
+                }
             }
         }
-    }
 
-    public void PauseGame()
-    {
-        isPaused = true;
-        deathScreenPanel.SetActive(false);
-        winScreenPanel.SetActive(false);
-        pauseMenuPanel.SetActive(true);
-        Time.timeScale = 0f;
-    }
+        public void PauseGame()
+        {
+            isPaused = true;
+            deathScreenPanel.SetActive(false);
+            winScreenPanel.SetActive(false);
+            pauseMenuPanel.SetActive(true);
+            Time.timeScale = 0f;
+        }
 
-    public void ResumeGame()
-    {
-        isPaused = false;
-        pauseMenuPanel.SetActive(false);
-        deathScreenPanel.SetActive(true);
-        winScreenPanel.SetActive(true);
-        Time.timeScale = 1f;
-    }
+        public void ResumeGame()
+        {
+            isPaused = false;
+            pauseMenuPanel.SetActive(false);
+            deathScreenPanel.SetActive(true);
+            winScreenPanel.SetActive(true);
+            Time.timeScale = 1f;
+        }
 
-    public void QuitGame()
-    {
-        Application.Quit();
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
     }
 }
+

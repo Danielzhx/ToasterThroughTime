@@ -1,25 +1,29 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+namespace TTT.System
 {
-    public void StartGame()
+    public class SceneChanger : MonoBehaviour
     {
-        SceneManager.LoadScene(1, LoadSceneMode.Single);
-    }
-    public void Quit()
-    {
-        Application.Quit();
-    }
+        public void StartGame()
+        {
+            SceneManager.LoadScene(1, LoadSceneMode.Single);
+        }
+        public void Quit()
+        {
+            Application.Quit();
+        }
 
-    public void ReturnToMainMenu()
-    {
-        SceneManager.LoadScene(0, LoadSceneMode.Single);
-    }
+        public void ReturnToMainMenu()
+        {
+            SceneManager.LoadScene(0, LoadSceneMode.Single);
+        }
 
-    public void RestartLevel()
-    {
-        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentSceneIndex, LoadSceneMode.Single);
+        public void RestartLevel()
+        {
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(currentSceneIndex, LoadSceneMode.Single);
+        }
     }
 }
+

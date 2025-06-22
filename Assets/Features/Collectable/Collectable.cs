@@ -2,31 +2,35 @@ using System;
 using TTT.Utillities.Pooling;
 using UnityEngine;
 
-public class Collectable : Spawnable 
+namespace TTT
 {
-    public Guid id;
-    public Action<Guid> onCollected;
+    public class Collectable : Spawnable 
+    {
+        public Guid id;
+        public Action<Guid> onCollected;
     
-    private void Awake()
-    {
-        OnSpawn += Initialize;
-    }
+        private void Awake()
+        {
+            OnSpawn += Initialize;
+        }
 
-    public virtual void Initialize()
-    {
-        id = Guid.NewGuid();
-    }
+        public virtual void Initialize()
+        {
+            id = Guid.NewGuid();
+        }
 
-    protected virtual void TriggerEnter(Collider2D other)
-    {
-        if (!other.CompareTag("Player")) return;
+        protected virtual void TriggerEnter(Collider2D other)
+        {
+            if (!other.CompareTag("Player")) return;
         
-        onCollected?.Invoke(id);
-        Despawn();
-    }
+            onCollected?.Invoke(id);
+            Despawn();
+        }
 
-    protected void OnTriggerEnter2D(Collider2D other)
-    {
-        TriggerEnter(other);
+        protected void OnTriggerEnter2D(Collider2D other)
+        {
+            TriggerEnter(other);
+        }
     }
 }
+

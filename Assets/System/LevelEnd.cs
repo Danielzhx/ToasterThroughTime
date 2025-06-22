@@ -1,14 +1,18 @@
 using UnityEngine;
 
-public class Level : MonoBehaviour
+namespace TTT.System
 {
-    public Animator levelEndAnimator;
-    public TarodevController.PlayerController playerControlls;
+    public class Level : MonoBehaviour
+    {
+        public Animator levelEndAnimator;
+        public TarodevController.PlayerController playerControlls;
 
-    void OnTriggerEnter2D(Collider2D other){
-        if(other.gameObject.CompareTag("Player")){
-            levelEndAnimator.SetTrigger("LevelFinished");
-            playerControlls.enabled = false;
+        void OnTriggerEnter2D(Collider2D other){
+            if(other.gameObject.CompareTag("Player")){
+                levelEndAnimator.SetTrigger("LevelFinished");
+                playerControlls.enabled = false;
+            }
         }
     }
 }
+

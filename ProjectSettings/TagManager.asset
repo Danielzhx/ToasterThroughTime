@@ -45,11 +45,11 @@ TagManager:
   - name: BackGround
     uniqueID: 3998243107
     locked: 0
-  - name: Moon
-    uniqueID: 851352627
-    locked: 0
   - name: BackgroundTiles
     uniqueID: 475872475
+    locked: 0
+  - name: Moon
+    uniqueID: 851352627
     locked: 0
   - name: BackgroundProps
     uniqueID: 3941623593

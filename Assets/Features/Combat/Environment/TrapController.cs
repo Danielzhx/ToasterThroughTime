@@ -1,21 +1,25 @@
 using UnityEngine;
 using TarodevController;
 
-public class TrapController : MonoBehaviour
+namespace TTT
 {
-    [SerializeField] private int damageAmount = 1;
-
-    void OnCollisionEnter2D(Collision2D collision)
+    public class TrapController : MonoBehaviour
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
-            if (player == null) return;
+        [SerializeField] private int damageAmount = 1;
 
-            if (!player.IsInvincible)
+        void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Player"))
             {
-                player.TakeDamage(damageAmount);
+                PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+                if (player == null) return;
+
+                if (!player.IsInvincible)
+                {
+                    player.TakeDamage(damageAmount);
+                }
             }
         }
     }
 }
+

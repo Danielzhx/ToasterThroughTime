@@ -1,0 +1,21 @@
+{
+    "name": "TTTFeatures",
+    "rootNamespace": "TTT",
+    "references": [
+        "GUID:f3eee718083b1c447aa67ff64faabb08",
+        "GUID:dfad8d630ed654e4a9ab4791fc655912",
+        "GUID:6df0451694bbd984ebd9849d99670282",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:f51ebe6a0ceec4240a699833d6309b23",
+        "GUID:73c93b3231b933a40a1c44920bc5e626"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

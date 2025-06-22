@@ -1,72 +1,76 @@
 using UnityEngine;
-using AudioManger;
+using TTT.System;
 
-public class OutletCharge : MonoBehaviour
+namespace TTT
 {
-    [SerializeField] private Sprite brokenOutletSprite;
-    private bool used;
-    private SpriteRenderer outletSprite;
-    private Animator _anim;
-    private Transform _zapTransform;
-    private SpriteRenderer _zapSprite;
-    private SpriteRenderer _electricityIcon;
-
-    public Charges charges;
-    [Range(1, 4)]
-    public int gainedCharges;
-    public GameObject Zap;
-    public Transform RightChargePoint;
-    public Transform LeftChargePoint;
-
-    void Start()
+    public class OutletCharge : MonoBehaviour
     {
-        used = false;
-        outletSprite = GetComponent<SpriteRenderer>();
-        _zapTransform = Zap.GetComponent<Transform>();
-        _zapSprite = Zap.GetComponent<SpriteRenderer>();
-        _anim = Zap.GetComponent<Animator>();
-        // DO NOT TOUCH OR EVEN LOOK AT THIS NEXT LINE!!!!!
-        _electricityIcon = this.gameObject.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>();
-    }
+        [SerializeField] private Sprite brokenOutletSprite;
+        private bool used;
+        private SpriteRenderer outletSprite;
+        private Animator _anim;
+        private Transform _zapTransform;
+        private SpriteRenderer _zapSprite;
+        private SpriteRenderer _electricityIcon;
 
-    void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
+        public Charges charges;
+        [Range(1, 4)]
+        public int gainedCharges;
+        public GameObject Zap;
+        public Transform RightChargePoint;
+        public Transform LeftChargePoint;
+
+        void Start()
         {
-            if (Input.GetKey(KeyCode.E) && !used)
+            used = false;
+            outletSprite = GetComponent<SpriteRenderer>();
+            _zapTransform = Zap.GetComponent<Transform>();
+            _zapSprite = Zap.GetComponent<SpriteRenderer>();
+            _anim = Zap.GetComponent<Animator>();
+            // DO NOT TOUCH OR EVEN LOOK AT THIS NEXT LINE!!!!!
+            _electricityIcon = this.gameObject.transform.GetChild(2).gameObject.GetComponent<SpriteRenderer>();
+        }
+
+        void OnTriggerStay2D(Collider2D other)
+        {
+            if (other.gameObject.CompareTag("Player"))
             {
-                AudioManager.instance.PlayCharacterChargingSound();
-                IncreaseCharges();
+                if (Input.GetKey(KeyCode.E) && !used)
+                {
+                    AudioManager.instance.PlayCharacterChargingSound();
+                    IncreaseCharges();
+                }
             }
         }
-    }
 
-    void IncreaseCharges()
-    {
-        if (charges.currentCharges < charges.totalCharges)
+        void IncreaseCharges()
         {
-            // Determine the position to place the Zap effect based on player's facing direction
-            if (_zapSprite.flipX)
+            if (charges.currentCharges < charges.totalCharges)
             {
-                _zapTransform.position = RightChargePoint.position;
+                // Determine the position to place the Zap effect based on player's facing direction
+                if (_zapSprite.flipX)
+                {
+                    _zapTransform.position = RightChargePoint.position;
+                }
+                else
+                {
+                    _zapTransform.position = LeftChargePoint.position;
+                }
+
+                _anim.SetTrigger("Charge");
+
+                // Add charges using the Charges class method
+                charges.AddCharges(gainedCharges);
+
+                used = true;
+                outletSprite.sprite = brokenOutletSprite;
+                _electricityIcon.color = new Color(0.25f, 0.25f, 0.25f, 1);
             }
             else
             {
-                _zapTransform.position = LeftChargePoint.position;
+                Debug.Log("Player already has maximum charges.");
             }
-
-            _anim.SetTrigger("Charge");
-
-            // Add charges using the Charges class method
-            charges.AddCharges(gainedCharges);
-
-            used = true;
-            outletSprite.sprite = brokenOutletSprite;
-            _electricityIcon.color = new Color(0.25f, 0.25f, 0.25f, 1);
-        }
-        else
-        {
-            Debug.Log("Player already has maximum charges.");
         }
     }
 }
+

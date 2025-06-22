@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace AudioManger
+namespace TTT.System 
 {
     public class AudioManager : MonoBehaviour
     {
