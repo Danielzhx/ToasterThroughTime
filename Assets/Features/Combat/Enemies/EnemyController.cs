@@ -1,7 +1,6 @@
 using UnityEngine;
-using TarodevController;
-using System.Collections;
 using TTT.System;
+using System.Collections;
 
 namespace TTT
 {

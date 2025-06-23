@@ -1,11 +1,11 @@
 using System;
 using UnityEngine;
 using System.Collections;
-using AudioManger;
+using TTT.System;
 using UnityEngine.UI;
 
 
-namespace TarodevController
+namespace TTT.System 
 {
     /// <summary>
     /// Hey!
